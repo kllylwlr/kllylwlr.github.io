@@ -293,7 +293,7 @@ p {
 .gridTitle {grid-area: title; }
 .gridMenu {grid-area: menu; }
 .gridMain {grid-area: main; }
-.gridFooter {grid-area: footer; }
+.gridFooter {grid-area: footer; height: 200px; }
 
 /* creating grid template */
 .grid-container {
