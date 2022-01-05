@@ -1,0 +1,358 @@
+/* for some reason custom font doesn't work */
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@font-face {
+  font-family: Gamja Flower;
+  src: url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+  font-family: Indie Flower;
+  src: url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+  font-family: Sacramento;
+  src: url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+}
+
+/* For Desktop*/
+@media screen and (max-width: 6000px) {
+  body {
+    background-image: url("../images/test2.3.png"), url("../images/desktopBgIcon.png"), url("../images/gridBg.png");
+    background-position: right top, right top, left top;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: auto, 150px, auto;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  .nav {
+    font-size: 25px;
+  }
+
+  .Title {
+    font-size: 120px;
+  }
+
+  #pieceTitle {
+    margin-top: 10px;
+    font-size: 30px;
+  }
+
+  .pieceDescription {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+
+  #picOfMe {
+    width: 30%;
+    height: 30%;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+
+  #aboutMe {
+    font-size: 35px;
+    margin-left: 40px;
+  }
+
+  #subheading {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+
+  .backToAssignments {
+    font-size: 30px;
+    border-width: 5px;
+  }
+
+  #quoteDisplay {
+    font-size: 30px;
+  }
+
+}
+
+/* For tablets */
+@media screen and (max-width: 900px) {
+  .nav {
+    font-size: 25px;
+  }
+
+  body {
+    background-image: url("../images/test2.3.png"), url("../images/tabletBgIcon.png"), url("../images/gridBg.png");
+    background-position: right top, right top, left top;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: auto, 150px, auto;
+  }
+
+  img {
+    width: 40%;
+    height: 40%;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  .Title {
+    font-size: 100px;
+  }
+
+  #subheading {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .pieceDescription {
+    font-size: 25px;
+  }
+
+  #picOfMe {
+    width: 32%;
+    height: 32%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  #aboutMe {
+    font-size: 131%;
+    margin-right: 20px;
+  }
+
+  .backToAssignments {
+    font-size: 20px;
+    border-width: 5px;
+  }
+
+  #quoteDisplay {
+    font-size: 25px;
+  }
+
+}
+
+/* For phones */
+@media screen and (max-width: 600px) {
+
+  .nav {
+    font-size: 18px;
+  }
+
+  body {
+    background-image: url("../images/test2.4.png"), url("../images/mobileBgIcon.png"), url("../images/gridBg.png");
+    background-position: right top, right top, left top;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-size: auto, 70px, auto;
+  }
+
+  img {
+    height: 45%;
+    width: 45%;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .Title {
+    font-size: 60px;
+  }
+
+  #subheading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .pieceDescription {
+    font-size: 15px;
+  }
+
+  #picOfMe {
+    width: 37%;
+    height: 37%;
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+
+  .backToAssignments {
+    font-size: 15px;
+    border-width: 2px;
+  }
+
+  #quoteDisplay {
+    font-size: 22px;
+  }
+
+}
+
+/* Link Stuff */
+  /* unvisited link */
+  a:link {
+    color: purple;
+  }
+  /* visited link */
+  a:visited {
+    color: #530053;
+  }
+  /* mouse over link */
+  a:hover {
+    color: #DDB494;
+  }
+  /* selected link */
+  a:active {
+    color: #F8EDC2;
+  }
+
+h1 {
+  font-size: 65px;
+  font-family: 'Gamja Flower';
+  color: #53556B;
+}
+
+p {
+  color: #53556B;
+  font-family: 'Indie Flower';
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.backToAssignments {
+  margin-top: 20px;
+  color: #53556B;
+  border-style: dashed;
+  border-color: #53556B;
+  background-color: #F8ECC1;
+}
+
+.Title {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  color: #53556B;
+  font-family: 'Sacramento';
+  text-align: center;
+}
+
+#picOfMe {
+  float: left;
+  margin-left: 30px;
+}
+
+#aboutMe {
+  text-align: left;
+  text-indent: 50px;
+}
+
+#piece {
+  padding: 5px;
+  width: auto;
+  height: auto;
+  max-width: 95%;
+}
+
+.pieceTitle {
+  font-weight: bold;
+  text-align: left;
+  margin-left: 5%;
+  margin-bottom: 0%;
+}
+
+.pieceDescription {
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 0%;
+}
+
+#portfolioMenu {
+  color: #53556B;
+  border-style: double;
+  border-width: 5px;
+  border-color: #53556B;
+  background-color: #F8ECC1;
+}
+
+#subheading {
+  text-decoration: underline;
+}
+
+#button {
+  background-color: #53556B;
+  border: none;
+  color: white;
+  padding: 2% 5%;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+
+
+/* grid formatting, assigning grid template names to classes */
+.nav {grid-area: header; }
+.gridTitle {grid-area: title; }
+.gridMenu {grid-area: menu; }
+.gridMain {grid-area: main; }
+.gridFooter {grid-area: footer; }
+
+/* creating grid template */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'title title title title'
+    'menu main main main'
+    'menu main main main'
+    'footer footer footer footer'
+}
+
+/* CSS properties for grid stuff starts here */
+.nav {
+  float: right;
+/*
+  font-size: 25px;
+*/
+  font-family: 'Indie Flower';
+  text-align: right;
+}
+
+.gridTitle {
+  background-color: #dfcfdcff;
+}
+
+.gridMenu {
+  background-color: #dfcfdcff;
+  border-style: solid;
+  border-color: red;
+}
+
+.gridMain {
+  background-color: #dfcfdcff;
+  width: auto;
+}
+
+/*table*/
+/* code source: my brother  */
+#docTable{
+  width: 98%;
+  margin: 10px;
+}
+
+#docTable td{
+  border: 1px solid #000;
+  position: relative;
+}
+.t1{
+  width: 20%;
+}
+.t2{
+  width: 80%;
+}
+
+#quoteDisplay {
+  font-weight: bold;
+  padding: 5%;
+  color: #8B8EB5;
+  font-family: 'Indie Flower';
+  text-align: center;
+}
