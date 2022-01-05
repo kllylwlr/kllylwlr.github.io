@@ -15,7 +15,7 @@
 /* For Desktop*/
 @media screen and (max-width: 6000px) {
   body {
-    background-image: url("../images/test2.3.png"), url("../images/desktopBgIcon.png"), url("../images/gridBg.png");
+    background-image: url("images/test2.3.png"), url("images/desktopBgIcon.png"), url("images/gridBg.png");
     background-position: right top, right top, left top;
     background-repeat: no-repeat, no-repeat, repeat;
     background-size: auto, 150px, auto;
