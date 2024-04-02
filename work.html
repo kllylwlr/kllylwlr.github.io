@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<!-- Head ----------------------------------------------------------------------------------->
+	<!-- HEAD ----------------------------------------------------------------------------------->
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,17 +8,14 @@
 		<!-- Font Awesome Icons library Link: https://cdnjs.com/libraries/font-awesome -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-		<title> Kelly Lawlor | Home </title>
+		<title> Kelly Lawlor | Work </title>
 		<link rel="icon" type="image/x-icon" href="images/Favicon.svg">
-		<!-- javascript stuff will go -->
+		<!-- Javascript will go here -->
 	</head>
 
-	<!-- Main content of page ------------------------------------------------------------------->
 	<body>
-
 		<!-- Header section ----------------------------------------------------------------------->
 		<header>
-
 			<div class="container">
 				<div class="row">
 					<div class="header-col">
@@ -30,8 +27,8 @@
 						<!-- Navigation -->
 						<!-- Resource: https://www.w3schools.com/howto/howto_js_topnav.asp -->
 						<div class="topNav">
-							<a class="activeNav" href="index.html">Home</a>
-							<a href="work.html">Work</a>
+							<a href="index.html">Home</a>
+							<a class="activeNav" href="work.html">Work</a>
 							<a href="about.html">About</a>
 							<a href="contact.html">Contact</a>
 						</div>
@@ -41,17 +38,10 @@
 			</div> <!-- Container div end -->
 		</header>
 
-		<!-- H1 Heading ----------------------------------------------------------------------->
-		<h1 id="name-heading"> Hi, I'm Kelly. A Designer ✨</h1>
-		<!-- will prob need an id or class to stylize diff from other H!s -->
+		<!-- H1 Heading ------------------------------------------------------------------------>
+		<h1> Work </h1>
 		<div class="secText">
-		<p> UX designer with 3+ years of experience in UX Design, Research and Writing across mobile and
-			web platforms. Based in New York 🗽 </p>
-		</div>
-
-		<h2 class="h2-center"> Featured Work </h2>
-		<div class="secText">
-			<!-- <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> -->
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 		</div>
 
 		<!-- Trillium Linefinder Preview ---------------------------------------------------->
@@ -97,7 +87,7 @@
 
 			<!-- Image Column ---------------------->
 			<div class="img-col">
-				<img class= "previewImg" src="images/bakexpress-preview.png" alt="Home screen of a study app">
+				<img class= "previewImg" src="images/bakexpress-preview.png" alt="Hot food vending machine">
 			</div>
 
 		</a>
@@ -126,8 +116,53 @@
 
 		</a>
 
-		<!-- View all projects button -->
-		<button type="button" class="button" onclick="window.location.href='work.html';"> View All Projects </button>
+		<!-- StudE preview ---------------------------------------------------->
+
+		<!-- Project Preview Container (Link) -->
+		<a class="projPreview proj-stud-e" href="projectStudE.html">
+
+			<!-- Description Column ---------------->
+			<div class="desc-col">
+				<!-- Project Title -->
+				<p class="proj-title">Stud-E</p>
+				<!-- Project Description -->
+				<p class="proj-desc"> Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit. Nulla eleifend quam vitae mauris placerat pretium.
+					eleifend.</p>
+				<!-- View full study button -->
+				<button class="caseStudyBtn btn-stud-e" type="button" name="button">Read Case Study</button>
+			</div>
+
+			<!-- Image Column ---------------------->
+			<div class="img-col">
+				<img class= "previewImg" src="images/stud-e-preview.png" alt="Home screen of a study app">
+			</div>
+
+		</a>
+
+		<!-- Manilla Preview ---------------------------------------------------->
+
+		<!-- Project Preview Container (Link) -->
+		<a class="projPreview proj-manilla" href="projectManilla.html">
+
+			<!-- Description Column ---------------->
+			<div class="desc-col">
+				<!-- Project Title -->
+				<p class="proj-title">Manilla</p>
+				<!-- Project Description -->
+				<p class="proj-desc"> Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit. Nulla eleifend quam vitae mauris placerat pretium.
+					eleifend.</p>
+				<!-- View full study button -->
+				<button class="caseStudyBtn btn-manilla" type="button" name="button">Read Case Study</button>
+			</div>
+
+			<!-- Image Column ---------------------->
+			<div class="img-col">
+				<img class= "previewImg" src="images/manilla-preview.png" alt="Home screen of a note-taking application">
+			</div>
+
+		</a>
 
 
 		<!-- Footer ----------------------------------------------------------------------------->
@@ -155,6 +190,3 @@
 				</div>  <!-- Row end -->
 			</div> <!-- Container end -->
 		</footer>
-
-	</body>
-</html>

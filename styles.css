@@ -1,0 +1,638 @@
+/* Font ----------------------------------------------------------------------------------------*/
+/* Import Poppins font */
+
+/* @import url('https://fonts.googleapis.com/css?family=Poppins'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+	font-family: 'Poppins';
+	/* Test w/ responsive footer */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Background ------------------------------------------------------------------------------------------- */
+
+body {
+	background-color: #FEF9F1;
+}
+
+/* Helpful CSS Stuff ------------------------------------------------------------------*/
+.container {
+	max-width: 1536px; 	/*max-width: 1170px; */
+	/* background-color: yellow; */
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.centerImg {
+	margin: auto;
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* HEADER / NAVIGATION -----------------------------------------------------------------------------*/
+
+.header-col {
+	width: 50%;
+	padding: 0 30px 0 30px; /* top, right, bottom, left */
+	/* background-color: pink; */
+}
+
+/* Maybe make position: sticky or fixed (https://www.w3schools.com/css/css_positioning.asp) */
+header {
+	margin-bottom: 20px; /* 100px; */
+	/* position fixed kinda worked */
+}
+
+#logo {
+	margin-top: 6px;
+}
+
+.topNav {
+	float: right;
+	margin-top: 36px;
+	/*margin-right: 36px; */
+}
+
+/* Navigation bar links */
+.topNav a{
+	color: #BD55D7;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 5px 24px 5px 25px;
+	transition: all 0.5s ease;
+	text-align: center;
+}
+
+/* Hover style */
+.topNav a.activeNav {
+	/* Border */
+	background-color: #BD55D7;
+	border-radius: 20px;
+	border: none;
+	/* Text */
+	color: #FEF9F1;
+	font-weight: bold;
+}
+
+/* Active style */
+/* Resource: active link not hover: https://stackoverflow.com/questions/37802124/how-to-disable-hover-effect-for-active-link */
+.topNav a:hover:not(.activeNav) {
+	/* Border */
+	background-color: #F5DFF9;
+	border-radius: 20px;
+	border: none;
+}
+
+/* ALT COLOR HEADER (For Individual Projects) */
+.headerAlt {
+	background-color: #BD55D7;
+	margin-bottom: 0px;
+}
+
+.navAlt a {
+	color: white;
+}
+
+.navAlt a.activeNavAlt {
+	background-color: #FEF9F1;
+	color: #BD55D7;
+}
+
+.navAlt a:hover:not(.activeNavAlt){
+	background-color: #D8AAE4;
+	color: white;
+}
+
+
+/* Responsive */
+/* Tablet view */
+@media(max-width: 767px){
+	.header-col {
+		width: 75%;
+	}
+	.topNav {
+		float: left;
+	}
+}
+
+/* Mobile View */
+@media(max-width: 574px){
+	.header-col {
+		width: 100%;
+	}
+
+}
+
+/* -------------------------------------------------------------------------------------
+	FOOTER
+ -------------------------------------------------------------------------------------*/
+/* Responsive Footer Reference: https://www.youtube.com/watch?v=YOb67OKw62s&t=279s */
+
+footer {
+	background-color: #C57AD8;
+	/*height: 200px; */
+	margin-top: 156px;
+	padding: 70px 0; /* from responsive footer video */
+}
+
+.footer-col {
+	width: 50%;
+	padding: 0 30px 0 30px; /* top, right, bottom, left */
+	/* background-color: red; */
+}
+
+/* Copyright text */
+#copyright{
+	font-size: 20px;
+	color: white;
+	margin: 0px 0px 0px 0px;
+	margin-bottom: 10px;
+}
+
+/* Sitemap div */
+.sitemap {
+	float: right;
+}
+
+.sitemap a {
+	font-size: 18px;
+	color: white;
+	margin: 10px 8px 10px 10px;
+	font-weight: 500;
+	text-decoration: none;
+	position: relative; /*is positioned relative to its normal position (https://www.w3schools.com/css/css_positioning.asp) */
+	transition: all 0.5s ease;
+}
+
+.sitemap a:hover {
+	color: #F5DFF9;
+}
+
+.sitemap a:active {
+	color: #854A94;
+}
+
+/* Social media links div */
+.socialLinks a {
+	font-size: 18px;
+	color: white;
+	font-weight: 500;
+	text-decoration: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: block; /* Makes whole line the link, figure out how to fix */
+	transition: all 0.5s ease;
+}
+
+.socialLinks i {
+	padding-right: 10px;
+	transition: all 0.5s ease;
+}
+
+.socialLinks a:hover {
+	color: #F5DFF9;
+}
+
+/* Responsive --------- */
+
+/* Tablet view */
+@media(max-width: 767px){
+	.footer-col {
+		width: 50%;
+	}
+}
+
+/* Mobile View */
+@media(max-width: 574px){
+	.footer-col {
+		width: 100%;
+	}
+
+	.sitemap {
+		margin-top: 30px;
+		float: left;
+	}
+}
+
+/* Headings ----------------------------------------------------------------------------------*/
+
+#name-heading {
+	font-size: 60px;
+}
+
+h1 {
+	color: #BD55D7;
+	font-size: 96px;
+	font-style: normal;
+	font-weight: 700;
+	text-align: center;
+}
+
+.h1White { color: white;}
+
+h2 {
+	color: #BD55D7;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 700;
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+}
+
+.h2White { color: white;}
+
+.h2-center { text-align: center;}
+
+.h2-left { text-align: left; }
+
+h3 {
+	color: #BD55D7;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.h3White { color: white;}
+
+h4 {
+	color: #BD55D7;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+/* Body Text ------------------------------------------------------------------------------*/
+
+p {
+	color: #BD55D7;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	margin: 20px 120px 20px 120px; /* top, right, bottom, left */
+}
+
+.pWhite { color: white;}
+
+/* List Items */
+ul {
+	color: #BD55D7;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.listWhite { color: white; }
+
+
+
+.projectTitle {
+	font-size: 40px;
+	color: #46214F;
+	/* Position */
+	margin: 167px 814px 311px 46px; /* NOT POSITIONING CORRECTLY */
+}
+
+/* Buttons -----------------------------------------------------------------------------*/
+
+.button {
+	/* Button */
+	background-color: #BD55D7;
+	border-radius: 41px;
+	padding: 25px 107px;
+	border: none;
+	width: fit-content;
+	/* Button text */
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	text-decoration: none; /* no link underline */
+	/* margin: 25px 107px; */
+	/* Formatting - Source: https://youtu.be/wS2Du5AsFtA*/
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Button Hover */
+.button:hover {
+	background-color: #854A94;
+	transition: all 0.5s ease;
+}
+
+/* -----------------------------------------------------------------------------------------
+		WORK PAGE
+------------------------------------------------------------------------------------------*/
+
+/* Project Preview container */
+/* Reference: https://www.pascalstrasche.com/*/
+.projPreview {
+	/* Size */
+	max-width: 1014px;
+	height: 538px;
+	/* Design */
+	background-color: gray;
+	border-radius: 14px;
+	text-decoration: none;
+	/* Display */
+	display: flex;
+	margin: auto;
+	position: relative; /* This is so i can have 'absolute' things positioned in it */
+	margin-bottom: 30px;
+}
+
+/* Project Description col */
+.desc-col {
+	/* background-color: green; */
+	width: 45%;
+	border-radius: 14px;
+	padding-left: 46px;
+}
+
+/* Project Title */
+.proj-title {
+	color: #46214F;
+	font-size: 40px;
+	font-weight: 700;
+	margin-top: 167px; /* 31% */
+}
+
+/* Project Description */
+.proj-desc {
+	font-size: 18px;
+	color: #46214F;
+	font-weight: 400;
+	/* Position */
+	margin-top: 12px;
+}
+
+/* Project Image col */
+/* Vertical & Horizontal center resource: https://www.freecodecamp.org/news/how-to-center-an-image-in-a-div-css/ */
+.img-col {
+	/* background-color: blue; */
+	width: 55%;
+	border-radius: 15px;
+	/* Display properties */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Project Preview Image */
+.previewImg {
+	/*max-width: 510px; */
+	width: 83%;
+}
+
+/* Read Case Study Button */
+.caseStudyBtn {
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+	border-radius: 41px;
+	border-style: none;
+	padding: 14px 40px 14px 40px; /* top, right, bottom, left */
+	position: absolute;
+	bottom: 100px;
+}
+
+/* Case Study Button Variants */
+.btn-manilla { background-color: #D2A2CC;}
+.btn-stud-e { background-color: #8CA1E6;}
+.btn-playpart { background-color: #B7C55E;}
+.btn-bakexpress { background-color: #F1C554;}
+.btn-linefinder { background-color: #64A5D0;}
+
+/* Case Study Background Variants */
+.proj-manilla { background-color: #E7D0E3; }
+.proj-stud-e { background-color: #C9D3F6; }
+.proj-playpart { background-color: #DDEA88; }
+.proj-bakexpress { background-color: #FCE3A3; }
+.proj-linefinder { background-color: #ACD0E9;}
+
+/* -----------------------------------------------------------------------------------------
+		INDIVIDUAL WORK / PROJECT PAGE
+------------------------------------------------------------------------------------------*/
+
+/* Project Header Container */
+/* How to specify each corner: https://www.w3schools.com/css/css3_borders.asp */
+.proj-header {
+	background-color: #BD55D7;
+	padding: 0px 90px 90px 90px; /* top, right, bottom, left */
+	border-radius: 0px 0px 85px 85px; /* top-left, top-right, bottom-right, bottom-left */
+}
+
+/* Overview Column */
+.overview-col {
+	/* background-color: green; */
+	padding: 0 20px 0 20px; /* top, right, bottom, left */
+	width: 70%;
+}
+
+/* Roles & Timeline Column */
+.roles-col {
+	/* background-color: blue; */
+	padding: 0 20px 0 20px; /* top, right, bottom, left */
+	width: 30%;
+}
+
+/* Project Section Container */
+.secContainer {
+	padding: 0 7% 0 7%; /* top, right, bottom, left */
+}
+
+/* Project Section Line */
+/* (NEEDS TO BE OPTIMIZED) */
+.line-col{
+	width: 35%;
+	/* background-color: green; */
+	/* Centering */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 6px; /*was flushed left & had weird gap on right so using padding as temp fix */
+}
+
+/* Project Section Title */
+.section-title {
+	/* background-color: blue; */
+	width: 30%;
+	text-align: center;
+}
+
+/* Section text container */
+.secText {
+	/* background-color: yellow; */
+	padding: 0 7% 0 7%; /*top, right, bottom, left */
+}
+
+/* Figure caption */
+figcaption  {
+	text-align: center;
+	font-style: italic;
+}
+
+/* -----------------------------------------------------------------------------------------
+		ABOUT PAGE
+------------------------------------------------------------------------------------------*/
+
+/* About column */
+.about-col {
+	width: 60%;
+	padding: 0px 20px 20px 20px;  /* top, right, bottom, left */
+	/* background-color: red; */
+}
+
+/* Portrait column */
+.portrait-col {
+	/* background-color: green; */
+	width: 40%;
+}
+
+/* Experience column */
+.experience-col {
+	/* background-color: blue; */
+	width: 65%;
+	padding-left: 16px; /* top, right, bottom, left */
+	padding-right: 16px;
+}
+
+/* Skills column */
+.skill-col {
+	/* background-color: orange; */
+	padding-left: 16px;
+	width: 35%;
+}
+
+/* Job title col */
+.job-col {
+	/* background-color: purple; */
+	width: 70%;
+}
+
+.job-col p {
+	font-weight: 500;
+}
+
+/* Job date col */
+.date-col {
+	/* background-color: yellow; */
+	width: 30%
+}
+
+.date-col p {
+	font-weight: 500;
+	float: right;
+}
+
+/* Job desc col */
+.job-desc-col {
+	/* background-color: pink; */
+	padding: 20px 20px 20px 20px;
+	margin-bottom: 30px;
+}
+
+/* Portrait */
+#portrait {
+	display: block;
+	width: 70%;
+	margin: auto;
+}
+
+/* Social Media Links Large */
+.social-section {
+	margin: auto;
+	text-align: center;
+}
+
+/* Large Social Media Links */
+.social-large {
+	/* Font style */
+	color: #BD55D7;
+	font-size: 32px;
+	font-weight: 500;
+	text-decoration: none;
+	/* Spacing */
+	margin: 10px 20px 10px 20px; 	/* top, right, bottom, left */
+	/* Transition */
+	transition: all 0.5s ease;
+}
+
+.social-large i {
+	margin-right: 10px;
+}
+
+.social-large:hover {
+	color: #854A94;
+}
+
+
+/* -----------------------------------------------------------------------------------------
+		CONTACT PAGE
+------------------------------------------------------------------------------------------*/
+/* Resource: https://stackoverflow.com/questions/17042201/how-to-style-input-and-submit-button-with-css*/
+/* Contact form resource: https://www.w3schools.com/howto/howto_css_contact_form.asp */
+/* Label above input field: https://stackoverflow.com/questions/6046110/styling-form-with-label-above-inputs */
+/* Ref for example sizing: https://www.youtube.com/watch?v=sGQSz22U8VM */
+
+/* Contact form Div */
+.contact-form {
+	width: 80%;
+	margin: auto;
+	/* background-color: green; */
+}
+
+/* Text field */
+input[type=text] {
+	width: 45%; /* 434px; */
+	border-radius: 10px;
+	border: 2px solid #BD55D7;
+	padding: 10px 10px 10px 10px;
+	margin: 2px 10px 48px 0px; /* top, right, bottom, left */
+}
+
+/* Message Field */
+textarea {
+	width: 100%; /* width: 868px; */
+	border-radius: 10px;
+	border: 2px solid #BD55D7;
+	padding: 10px;
+	margin: 10px 10px 20px 0px;
+	resize: none;
+}
+
+/* Form Submit Button */
+input[type=submit] {
+	/* Button */
+	background-color: #BD55D7;
+	border-radius: 41px;
+	padding: 25px 88px 25px 88px;
+	border: none;
+	/* Button text */
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	margin: auto;
+
+}
+
+/* Label text */
+label {
+	font-size: 18px;
+	font-weight: 500;
+	color: #BD55D7;
+}
+
+/* Label Alignment */
+label, input {
+	display: flex;
+	flex-direction: column;
+}

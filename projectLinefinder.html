@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
+		<!-- Font Awesome Icons library Link: https://cdnjs.com/libraries/font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<title> Kelly Lawlor | LineFinder </title>
+		<link rel="icon" type="image/x-icon" href="images/Favicon.svg">
+		<!-- javascript stuff will go -->
+	</head>
+
+	<body>
+
+		<!-- Header section ----------------------------------------------------------------------->
+		<header class="headerAlt">
+			<div class="container">
+				<div class="row">
+					<div class="header-col">
+						<!-- Logo -->
+						<a href="index.html"><img src="images/logo-secondary.svg" alt="website logo" width="254" height="96" id="logo">
+					</div>
+
+					<div class="header-col">
+						<!-- Navigation -->
+						<!-- Resource: https://www.w3schools.com/howto/howto_js_topnav.asp -->
+						<div class="topNav navAlt">
+							<a href="index.html">Home</a>
+							<a class="activeNav activeNavAlt" href="work.html">Work</a>
+							<a href="about.html">About</a>
+							<a href="contact.html">Contact</a>
+						</div>
+					</div>
+
+				</div> <!-- Row div end -->
+			</div> <!-- Container div end -->
+		</header>
+
+		<!-- Overview Section ----------------------------------------------------->
+		<!-- Section container -->
+		<div class="proj-header">
+
+			<!-- Project Title -->
+			<h1 class="h1White"> Trillium LineFinder </h1>
+
+			<!-- Project Overview, skills, timeline row -->
+			<div class="row">
+
+				<!-- Overview Column -->
+				<div class="overview-col">
+					<h2 class="h2White">Overview</h2>
+					<p class="pWhite">The Trillium Line Finder is a tool developed by the
+						Oregon Health Plan that is used by medical providers to determine if
+						the combination of a specific diagnosis and procedure is payable by
+						Medicare. I was tasked to redesign the website with
+						a more modernized look and improve search functionality
+					 	to make navigation of the tool more efficient and intuitive.</p>
+
+				</div>
+
+				<!-- roles & Timeline Column -->
+				<div class="roles-col">
+					<h3 class="h3White">Roles</h3>
+					<ul class="listWhite">
+						<li>User Experience Designer</li>
+						<li>User Experience Researcher</li>
+					</ul>
+
+					<h3 class="h3White">Timeline</h3>
+					<p class="pWhite">May 2023 - August 2023</p>
+
+				</div>
+
+			</div> <!-- end of row -->
+
+		</div> <!-- end of container -->
+
+		<!-- Project Preview Image ------------------------------------------------>
+		<div class="container">
+			<img class="centerImg" src="images/linefinder-preview.png" alt="" width="60%">
+		</div>
+
+		<!-- Concept Section ------------------------------------------------------>
+
+		<!-- TRY W FLEXBOX
+		- put the 3 divs in 1 div that has flexbox & make them vertically Align
+		- inside line divs, create line as div, make it a border (not border top)
+		- make them with 100% & height 0-->
+
+		<!-- Heading -->
+		<div class="container secContainer">
+			<div class="row"> <!-- was prev 'row' -->
+				<div class="line-col">
+					<!-- MAY NEED TO MAKE SVGS, reference Figma -->
+					<svg class="hLine" width="100%" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+	  				<path d="M3 3H445" stroke="#BD55D7" stroke-width="6" stroke-linecap="round"/>
+					</svg>
+				</div>
+
+				<div class="section-title">
+					<h2>I. Concept</h2>
+				</div>
+
+				<div class="line-col">
+					<!-- MAY NEED TO MAKE SVGS, reference Figma -->
+					<svg class="hLine" width="100%" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3 3H445" stroke="#BD55D7" stroke-width="6" stroke-linecap="round"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<!-- Section text container -->
+		<div class="secText">
+			<!-- Subheading -->
+			<h3>Problem</h3>
+
+			<!-- Text -->
+			<p>The Trillium LineFinder is a tool developed by the Oregon Health Plan
+				that is used by medical providers to search through a prioritized list
+				of services to determine if a line – the combination of an ICD code
+				(representing a diagnosis) and a CPT code (representing a procedure) –
+				is considered ‘above the line’, meaning it is payable by Medicare, or
+				‘below the line’, meaning it is not.
+			</p>
+			<br>
+			<p> The tool was originally built in 2011, and as a result it suffered
+				from several security vulnerabilities and sported an outdated design.
+				The goals of the redesign were to meet contemporary security standards;
+				modernize the appearance of the UI; and identify pain points to make
+				navigation of the tool more efficient and intuitive.
+			</p>
+
+			<div class="container">
+				<figure>
+					<img class="centerImg" src="images/Centene Case Study/original-linefinder-preview.png" alt="Original look of the Trillium Linefinder" width="60%">
+					<figcaption> The original look of the Trillium Line Finder </figcaption>
+				</figure>
+			</div>
+
+			<br>
+
+		</div>
+
+		<!-- Research Section ------------------------------------------------------>
+		<div class="container secContainer">
+			<div class="row"> <!-- was prev 'row' -->
+				<div class="line-col">
+					<svg class="hLine" width="100%" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+	  				<path d="M3 3H445" stroke="#BD55D7" stroke-width="6" stroke-linecap="round"/>
+					</svg>
+				</div>
+
+				<div class="section-title">
+					<h2>II. Research</h2>
+				</div>
+
+				<div class="line-col">
+					<!-- MAY NEED TO MAKE SVGS, reference Figma -->
+					<svg class="hLine" width="100%" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3 3H445" stroke="#BD55D7" stroke-width="6" stroke-linecap="round"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="secText">
+			<!-- Subheading -->
+			<h3>Exploration of Original Tool</h3>
+			<!-- Text -->
+			<p>To identify pain points in the original tool, I first sought to explore
+				and familiarize myself with it. Through my personal testing two pain
+				points stood out to me.
+			</p> <br>
+
+			<h4> 1) Challenging Search Interface </h4>
+			<p> There are three major use cases of the tool, corresponding to the three
+				key ways to search: by an ICD and/or CPT code, by a line number, or by a
+				guideline number.
+			</p> <br>
+			<p> However, in the original tool the fields to enter an ICD code, CPT
+				code, line number and guideline all displayed on the same line, which
+				had given me and other users the false impression that all fields must
+				be filled to conduct a search, which was not the case.
+			</p>
+			<div class="container">
+				<figure>
+					<img class="centerImg" src="images/Centene Case Study/pain-point-search.png" alt="Search bar of the original Trillium Line Finder tool" width="60%">
+					<figcaption> Search bar of the original Trillium Line Finder tool </figcaption>
+				</figure>
+			</div>
+			<br>
+
+			<h4> 2) Difficulty Viewing Descriptions </h4>
+			<p> In the original tool when searching for a line, its associated ICD and
+				CPT codes displayed in a long vertical table which would often go
+				offscreen and be difficult to skim. Additionally, there was no way to
+				view the descriptions of each code, which was detrimental for users who
+				wanted to further refine their search.
+			</p>
+			<div class="container">
+				<figure>
+					<img class="centerImg" src="images/Centene Case Study/pain-point-codes.png" alt="ICD and CPT code display in the original Trillium Line Finder tool" width="60%">
+					<figcaption> ICD and CPT code display in the original Trillium Line Finder tool </figcaption>
+				</figure>
+			</div> <br>
+
+
+
+		</div>
+
+
+		<!-- Ideation Section ------------------------------------------------------>
+		<div class="container secContainer">
+			<div class="row"> <!-- was prev 'row' -->
+				<div class="line-col">
+					<!-- MAY NEED TO MAKE SVGS, reference Figma -->
+					<svg class="hLine" width="100%" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+	  				<path d="M3 3H445" stroke="#BD55D7" stroke-width="6" stroke-linecap="round"/>
+					</svg>
+				</div>
+
+				<div class="section-title">
+					<h2>III. Ideation</h2>
+				</div>
+
+				<div class="line-col">
+					<!-- MAY NEED TO MAKE SVGS, reference Figma -->
+					<svg class="hLine" width="100%" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3 3H445" stroke="#BD55D7" stroke-width="6" stroke-linecap="round"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="secText">
+			<!-- Subheading -->
+			<h3>Design Solutions</h3>
+			<!-- Text -->
+			<p>Once pain points were identified and validated with users, I moved onto
+				the ideation stage.</p>
+
+			<h4> 1) Reimagining the Search System </h4>
+			<p> To clarify the confusion over the required search criteria created by
+				putting all search fields on the same line, I devised a dropdown with
+				three options corresponding to the four primary ways to search: by ICD
+				and/or CPT code, by line number, by guideline number, and by keyword.
+			</p>
+			<br>
+			<p> This dropdown offers a cleaner interface and reduces the user’s
+				cognitive load, as search input fields are limited to those required for
+				the selected type of search
+			</p>
+			<br>
+			<p> For example: if a user selects ‘ICD and/or CPT code’ they will only be
+				shown the ICD code field and CPT code field, but if they were to select
+				‘line number’ they will only be shown a field to input the line number.
+			</p>
+
+			<!-- Photo -->
+			<div class="container">
+				<figure>
+					<img class="centerImg" src="images/Centene Case Study/linefinder-search-default.png" alt="Updated search page for the redesigned Line Finder tool" width="60%">
+					<figcaption> Updated search page for the redesigned Line Finder tool </figcaption>
+					<img class="centerImg" src="images/Centene Case Study/linefinder-search-line.png" alt="Updated search page for the redesigned Line Finder tool" width="60%">
+					<figcaption> 'Search by' dropdown selected </figcaption>
+				</figure>
+			</div>
+			<br>
+
+			<h4> 2) Accessible Alternatives to Modal </h4>
+			<p> To address the inability and lack of accessibility to view code
+				descriptions, we designed accessible alternatives.
+			</p>
+			<br>
+			<p> In the competitor tool, descriptions for codes related to a line are
+				viewable by opening a collapsable table clicking on them. We wished to
+				adopt this design pattern in our redesign, as it allowed users to quickly
+				access and switch between code descriptions.
+			</p>
+			<br>
+			<p> However, in the competitor, these descriptions displayed as modals -
+				which are pop-up windows that grey out and disable interaction with the
+				main page until they are closed.
+			</p>
+			<br>
+			<p> This interaction posed accessibility concerns as blind users may not
+				be notified a modal has appeared - and if not properly coded, modals
+				cannot be read by a screen reader or closed by keyboard only.
+			</p>
+
+			<!-- Photo -->
+			<div class="container">
+				<figure>
+					<img class="centerImg" src="images/Centene Case Study/competitor-table-crop.png" alt="Associated ICD and CPT codes of a line in the competitor tool" width="60%">
+					<figcaption> Associated ICD and CPT codes of a line in the competitor tool </figcaption>
+					<img class="centerImg" src="images/Centene Case Study/competitor-modal-crop.png" alt="Code description modal in the competitor tool" width="60%">
+					<figcaption> Code description modal in the competitor tool </figcaption>
+				</figure>
+			</div>
+			<br>
+
+			<p> The devised alternative to modals was to have the descriptions display
+				within the table beneath the list of codes when one of them was clicked.
+			</p> <br>
+			<p> This addressed the accessibility concerns of using a modal, and kept
+				information easy to access and in-context.
+			</p>
+
+			<!-- Photo -->
+			<div class="container">
+				<figure>
+					<img class="centerImg" src="images/Centene Case Study/linefinder-line-result.png" alt="Associated ICD and CPT codes of a line in the redesigned Linefinder" width="60%">
+					<figcaption> Associated ICD and CPT codes of a line in the redesigned Linefinder </figcaption>
+					<img class="centerImg" src="images/Centene Case Study/linefinder-line-result-icd-code.png" alt="Associated ICD and CPT codes of a line in the redesigned Linefinder" width="60%">
+					<figcaption> In-table ICD code description </figcaption>
+				</figure>
+			</div> <br>
+
+		</div>
+
+		<!-- Testing Section ------------------------------------------------------>
+		<div class="container secContainer">
+			<div class="row"> <!-- was prev 'row' -->
+				<div class="line-col">
+					<!-- MAY NEED TO MAKE SVGS, reference Figma -->
+					<svg class="hLine" width="100%" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+	  				<path d="M3 3H445" stroke="#BD55D7" stroke-width="6" stroke-linecap="round"/>
+					</svg>
+				</div>
+
+				<div class="section-title">
+					<h2>IV. Testing</h2>
+				</div>
+
+				<div class="line-col">
+					<!-- MAY NEED TO MAKE SVGS, reference Figma -->
+					<svg class="hLine" width="100%" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3 3H445" stroke="#BD55D7" stroke-width="6" stroke-linecap="round"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="secText">
+			<!-- Subheading -->
+			<h3>Usability Testing</h3>
+			<!-- Text -->
+			<p>After completion and approval of the initial wireframes, I arranged to
+				conduct a usability test with super users.
+			</p> <br>
+			<p>In preparation of testing I created an interactable prototype for the
+				users to click through to imitate how the final product would look and
+				function. The immersive experience of this simulation was employed to
+				promote more specific data and feedback from users. I also composed
+				multiple use case scenario questions to prompt users to navigate to
+				specific parts of the tool. These questions would give me the opportunity
+				to observe a user’s journey firsthand, and note the participants’
+				behaviors, goals, and pain points as they interacted with the product.
+			</p> <br>
+
+			<!-- Photo -->
+			<div class="container">
+				<figure>
+					<img class="centerImg" src="images/Centene Case Study/linefinder-prototype-gif.gif" alt="Interactive prototype of the redesigned Linefinder tool" width="60%">
+					<figcaption> Interactive prototype of the redesigned Linefinder tool </figcaption>
+				</figure>
+			</div> <br>
+
+			<p>During the usability test I took detailed notes on the user’s interactions
+				with and comments on the prototype. As I observed the users’ actions
+				throughout each scenario, I saw they were able to quickly navigate to the
+				designated pages, signaling to me that the design was intuitive thus far.
+				Users responded positively to the modernized look and organization of
+				information, remarking that the design was clean, intuitive; and on the
+				collapsable tables and in-table ICD and CPT descriptions, saying it made
+				it much easier to search for things.
+			</p> <br>
+
+			<p>One point of constructive criticism made by the users was the request
+				for a disclaimer about whether a specific line is fundable by Medicare.
+			</p> <br>
+			<p>During an initial meeting with users to understand the functionality of
+				the tool, users had explained that all lines with line numbers below 470
+				are fundable by Medicare, whereas those above are not fundable. However,
+				during this test users clarified that lines marked as fundable can only
+				be verified as fundable if all associated guidelines of the line are met
+				by the practitioner.
+			</p> <br>
+			<p>In the past some users had assumed that any line marked as ‘above’ was
+				fundable by Medicare, which led to confusion and medical practice issues.
+				This feedback was indispensable and greatly appreciated. I quickly devised
+				a solution to place a disclaimer explaining that lines are only payable
+				if they are marketed as ‘above’ and meet guideline requirements above
+				the line results table, so it would be visible to users every time they
+				looked at a line.
+			</p> <br>
+			<!-- Photo -->
+			<div class="container">
+				<figure>
+					<img class="centerImg" src="images/Centene Case Study/linefinder-fundable-disclaimer.png" alt=" Disclaimer about fundable status in redesigned Linefinder tool" width="60%">
+					<figcaption> Disclaimer about fundable status in redesigned Linefinder tool </figcaption>
+				</figure>
+			</div> <br>
+
+		</div>
+
+		<!-- Outcome Section ------------------------------------------------------>
+		<div class="container secContainer">
+			<div class="row"> <!-- was prev 'row' -->
+				<div class="line-col">
+					<!-- MAY NEED TO MAKE SVGS, reference Figma -->
+					<svg class="hLine" width="100%" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+	  				<path d="M3 3H445" stroke="#BD55D7" stroke-width="6" stroke-linecap="round"/>
+					</svg>
+				</div>
+
+				<div class="section-title">
+					<h2>V. Outcome</h2>
+				</div>
+
+				<div class="line-col">
+					<!-- MAY NEED TO MAKE SVGS, reference Figma -->
+					<svg class="hLine" width="100%" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3 3H445" stroke="#BD55D7" stroke-width="6" stroke-linecap="round"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="secText">
+			<!-- Subheading -->
+			<h3>Final Prototype</h3>
+			<!-- Text -->
+			<p>The completed interactable prototype was presented to a group of senior
+				designers, developers, and product managers at Centene.
+			</p><br>
+			<p>Senior designers and managers complimented the design and commended the
+				prioritization of Accessibility concerns.
+			</p><br>
+			<p>After finalization of the design I transitioned into a design support
+				role to support front-end development.
+			</p><br>
+			<p>Development currently ongoing and final website will be deployed sometime
+				in the future.
+			</p><br>
+			<div class="container">
+				<img class="centerImg" src="images/linefinder-preview.png" alt="" width="60%">
+			</div>
+
+		</div>
+
+		<!-- View prototype button -->
+		<button type="button" name="button" class="button" id="linefinderPrototypeBtn">View Prototype</button>
+		<br>
+
+		<!-- More Work Section ------------------------------------------------------>
+		<h2 class=h2-center>More Work</h2>
+
+		<!-- Project Preview 1 ---------------------------------------------------->
+
+		<!-- Project Preview Container (Link) -->
+		<a class="projPreview proj-manilla" href="projectManilla.html">
+
+			<!-- Description Column ---------------->
+			<div class="desc-col">
+				<!-- Project Title -->
+				<p class="proj-title">Manilla</p>
+				<!-- Project Description -->
+				<p class="proj-desc"> Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit. Nulla eleifend quam vitae mauris placerat pretium.
+					eleifend.</p>
+				<!-- View full study button -->
+				<button class="caseStudyBtn btn-manilla" type="button" name="button">Read Case Study</button>
+			</div>
+
+			<!-- Image Column ---------------------->
+			<div class="img-col">
+				<img class= "previewImg" src="images/manilla-preview.png" alt="Home screen of a note-taking application">
+			</div>
+
+		</a>
+
+		<!-- Project Preview 2 ------------------------------------>
+
+		<!-- Project Preview Container (Link) -->
+		<a class="projPreview proj-stud-e" href="projectStudE.html">
+
+			<!-- Description Column ---------------->
+			<div class="desc-col">
+				<!-- Project Title -->
+				<p class="proj-title">Stud-E</p>
+				<!-- Project Description -->
+				<p class="proj-desc"> Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit. Nulla eleifend quam vitae mauris placerat pretium.
+					eleifend.</p>
+				<!-- View full study button -->
+				<button class="caseStudyBtn btn-stud-e" type="button" name="button">Read Case Study</button>
+			</div>
+
+			<!-- Image Column ---------------------->
+			<div class="img-col">
+				<img class= "previewImg" src="images/stud-e-preview.png" alt="Home screen of a study app">
+			</div>
+
+		</a>
+
+		<!-- Project Preview 3 ----------------->
+		<!-- Project Preview Container (Link) -->
+		<a class="projPreview proj-playpart" href="projectPlaypart.html">
+
+			<!-- Description Column ---------------->
+			<div class="desc-col">
+				<!-- Project Title -->
+				<p class="proj-title">PlayPart</p>
+				<!-- Project Description -->
+				<p class="proj-desc"> Lorem ipsum dolor sit amet, consectetur
+					adipiscing elit. Nulla eleifend quam vitae mauris placerat pretium.
+					eleifend.</p>
+				<!-- View full study button -->
+				<button class="caseStudyBtn btn-playpart" type="button" name="button">Read Case Study</button>
+			</div>
+
+			<!-- Image Column ---------------------->
+			<div class="img-col">
+				<img class= "previewImg" src="images/playPart-preview.png" alt="Home screen of an environmental sports app">
+			</div>
+
+		</a>
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Footer ----------------------------------------------------------------------------->
+		<footer>
+			<div class="container">
+				<div class="row">
+
+					<div class="footer-col">
+						<p id="copyright"> Kelly Lawlor © 2023 </p>
+						<div class="socialLinks">
+							<a href="https://www.linkedin.com/in/kelly-lawlor/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+							<a href="https://github.com/kllylwlr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a>
+						</div>
+					</div>
+
+					<div class="footer-col">
+						<div class="sitemap">
+							<a href="index.html">Home</a>
+							<a href="work.html">Work</a>
+							<a href="About.html">About</a>
+							<a href="contact.html">Contact</a>
+						</div>
+					</div>
+
+				</div>  <!-- Row end -->
+			</div> <!-- Container end -->
+		</footer>
+
+		<!-- SCRIPT STUFF ---------------------------------------------------------->
+		<script src="script.js"></script>
+
+	</body>
+</html>

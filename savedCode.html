@@ -1,0 +1,90 @@
+<!-- Original header -->
+	<header>
+
+		<!-- Logo -->
+		<img src="images/Logo.svg" alt="website logo" width="254" height="96" id="logo">
+
+		<!-- Navigation ------------------------------------------------------->
+		<!-- Resource: https://www.w3schools.com/howto/howto_js_topnav.asp -->
+		<div class="topNav">
+			<a class="activeNav" href="index.html">Home</a>
+			<a href="work.html">Work</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</div>
+
+	</header>
+
+
+	<!-- Original Header CSS Code -->
+	/* REDO based on youtube w/ columns & maybe make position: sticky or fixed (https://www.w3schools.com/css/css_positioning.asp) */
+	header {
+		margin-bottom: 100px;
+		/* position fixed kinda worked */
+	}
+
+	.topNav {
+		float: right;
+		margin-top: 36px;
+		margin-right: 36px;
+		/*padding: 36px 40px 36px 40px;*/
+	}
+
+	/* Navigation bar links */
+	.topNav a{
+		color: #BD55D7;
+		font-size: 18px;
+		text-decoration: none;
+		padding: 5px 24px 5px 25px;
+		transition: all 0.5s ease;
+		text-align: center;
+	}
+
+	/* Hover style */
+	.topNav a.activeNav {
+		/* Border */
+		background-color: #BD55D7;
+		border-radius: 20px;
+		border: none;
+		/* Text */
+		color: #FEF9F1;
+		font-weight: bold;
+	}
+
+	/* Active style */
+	/* Resource: active link not hover: https://stackoverflow.com/questions/37802124/how-to-disable-hover-effect-for-active-link */
+	.topNav a:hover:not(.activeNav) {
+		/* Border */
+		background-color: #F5DFF9;
+		border-radius: 20px;
+		border: none;
+
+	}
+
+	<!-- Project Preview -->
+			<!-- Project Preview 1 -->
+			<!-- <div class="container"> -->
+			<div class="projectPreview">
+				<div class="container">
+					<div class="row">
+						<!-- Project Text --------------------------------------------------->
+						<div class="project-text">
+							<!-- Project Title -->
+							<p class="proj-title"> Project Title</p>
+							<!-- Project Description -->
+							<p class="proj-desc"> Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Nulla eleifend quam vitae mauris placerat pretium.
+								eleifend.</p>
+							<!-- View full study button -->
+							<button class="caseStudy-button" type="button" name="button">Read Case Study</button>
+
+						</div>
+						<!-- Project Image -------------------------------------------------->
+						<div class="project-img">
+
+						</div>
+
+					</div>
+				</div>
+
+				</div>

@@ -1,69 +1,324 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> Fragrance in Thaw </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
+		<!-- Font Awesome Icons library Link: https://cdnjs.com/libraries/font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  </head>
+		<title> Kelly Lawlor | About </title>
+		<link rel="icon" type="image/x-icon" href="images/Favicon.svg">
+		<!-- Javascript will go here -->
 
-  <body>
-    <header>
-      <h1> Fragrance in Thaw </h1>
-    </header>
-      <div class="grid-container">
-        <div class="nav">
-          <a href="index.html">Home</a>
-          &nbsp; | &nbsp;
-          <a href="portfolioShortStories.html">Portfolio</a>
-          &nbsp; | &nbsp;
-          <a href="about.html">About</a>
-          &nbsp; | &nbsp;
-          <a href="contact.html">Contact</a>
-          &nbsp; &nbsp;
-        </div>
+	</head>
 
-        <div class="gridTitle">
-          <p class="Title"> About Me </p>
-          <center>
-            <source media="(min-width:901px)" srcset="meV2.jpg">
-            <source media="(min-width:601px)" srcset="meV3.jpg">
-          <img id="picOfMe" src="images/me.jpg" alt="Picture of Me" width="450" height="951">
-        </center>
-          <br>
-          <p id="aboutMe"> Hello! My name is Kelly Lawlor and I am currently a Sophomore at NYU. </p>
-          <p id="aboutMe">I've loved to read since I was young, and my love for stories led me to want to create my own.
-            I write short stories mostly, and take inspiration for my work from the books, shows,
-            movies and games I consume.
-          </p>
-          <p id="aboutMe">
-            Some of my creative works have been published in my former high school's
-            literary magazine, KEN Literary Magazine, and one of my poems has been published in
-            The America Library of Poetry's poetry book, <i>Illustrious</i>.
-          </p>
-          <p id="aboutMe">
-            Last year, I took my first writing class at NYU, Intermediate Fiction Workshop.
-            I was the only freshman in my class which made me nervous, as I felt inexperienced
-            in comparison to my peers. However, my classmates and professor have
-            made me feel very welcome; they have given me many kind compliments on my work,
-            as well as helpful critiques that will help me improve as a writer. Their support,
-            as well as their own amazing written works, have inspired me in many ways.
-          </p>
-        </div>
+	<body>
+		<!-- Header section ----------------------------------------------------------------------->
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="header-col">
+						<!-- Logo -->
+						<a href="index.html"><img src="images/Logo.svg" alt="website logo" width="254" height="96" id="logo">
+					</div>
 
-        <div class="gridFooter">
-        </div>
+					<div class="header-col">
+						<!-- Navigation -->
+						<!-- Resource: https://www.w3schools.com/howto/howto_js_topnav.asp -->
+						<div class="topNav">
+							<a href="index.html">Home</a>
+							<a href="work.html">Work</a>
+							<a class="activeNav" href="about.html">About</a>
+							<a href="contact.html">Contact</a>
+						</div>
+					</div>
 
-    <main>
+				</div> <!-- Row div end -->
+			</div> <!-- Container div end -->
+		</header>
 
-    </main>
+		<!-- H1 Heading ------------------------------------------------------------------------>
+		<h1> About </h1>
 
-    <footer>
+		<!-- About me + Portrait ------------------------------------------------------------------------------------------------->
 
-    </footer>
+		<div class="container">
 
-  </body>
+			<div class="row">
+
+				<div class="about-col">
+
+					<h2 class="h2-left"> Hello! </h2>
+					<p> My name is Kelly Lawlor and I am a Senior studying English and
+						Computer Science at New York University. </p>
+					<br>
+
+					<p> I have loved to exercise my creativity from a young age, and I was
+						drawn by UX because unlike other design fields where you aim to
+						create the most aesthetically pleasing product, in UX you must also
+						work to create an enjoyable and painless experience, and the
+						challenge of striking that perfect balance between form and function
+						along with having the opportunity to improve people’s day are
+						something I find very rewarding. </p>
+					<br>
+
+					<p>Outside of work I enjoy engaging in a lot of other creative hobbies
+						such as sewing, drawing, and writing!</p>
+
+				</div> <!-- abt col end -->
+
+				<div class="portrait-col">
+
+					<img src="images/kelly-lawlor-centene-id.png" alt="Smiling girl with long brown hair" id="portrait">
+
+				</div> <!-- portrait col end -->
+
+			</div> <!-- Row end -->
+
+		</div> <!-- Container end -->
+
+		<!-- Experience section ----------------------------------------------------------------------------------------------->
+		<div class="container">
+			<div class="row">
+
+				<!-- Experience Column ------------------------------------------------>
+				<div class="experience-col">
+					<h2><i class="fa-solid fa-briefcase"></i> Experience </h2>
+
+						<!-- Experience 1: Centene --------------------------->
+						<div class="container">
+							<!-- Job heading row -->
+							<div class="row">
+
+									<!-- Job title column -->
+									<div class="job-col">
+										<p> Centene - User Experience Design Intern </p>
+									</div>
+
+									<!-- Job date column -->
+									<div class="date-col">
+										<p> 05/2023 - 08/2023 </p>
+									</div>
+
+							</div> <!-- end of job title & date row -->
+
+							<!-- Job description row -->
+							<div class="row">
+								<!-- Job description column -->
+								<div class="job-desc-col">
+									<ul>
+
+										<li>Collaborated on a team with developers and business
+											managers on the redesign of a tool used by medical providers
+											to modernize its interface and resolve user pain points
+										</li>
+
+										<li>Designed an interactable prototype and composed use case
+											scenario questions to conduct usability testing with users
+										</li>
+
+										<li>Partnered with product management and business analysts
+											to identify business needs, prioritize MVP requirements,
+											and bridge the gap between user needs and business goals
+										</li>
+
+										<li>Worked closely with developers to ensure feasibility of
+											features and provide design support during front end
+											development
+										</li>
+
+										<li>Collaborated with Accessibility team to ensure compliance
+											with WCAG, practice inclusive design, and build an
+											accessible product
+										</li>
+
+									</ul>
+								</div> <!-- end of job desc col -->
+							</div> <!-- end of job desc row -->
+						</div> <!-- end of experience 1 -------------------------->
+
+						<!-- Experience 2: LBX --------------------------->
+						<div class="container">
+							<!-- Job heading row -->
+							<div class="row">
+
+									<!-- Job title column -->
+									<div class="job-col">
+										<p> LBX - User Research and Development Consultant </p>
+									</div>
+
+									<!-- Job date column -->
+									<div class="date-col">
+										<p> 02/2023 - 05/2023 </p>
+									</div>
+
+							</div> <!-- end of job title & date row -->
+
+							<!-- Job description row -->
+							<div class="row">
+								<!-- Job description column -->
+								<div class="job-desc-col">
+									<ul>
+
+										<li>Served as UX Design and Research consultant for go to
+											market strategy
+										</li>
+
+										<li>Advocated for users to help team see beyond business
+											goals, and produced solutions that combined user and
+											stakeholder needs
+										</li>
+
+										<li>Streamlined product’s user journey by mapping user flows
+											and identifying pain points and areas for optimization
+										</li>
+
+										<li>Designed and presented informative slideshows summarizing
+											design insights, solution mockups and next steps to track
+											milestones and progress
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div> <!-- end of experience 2 -------------------------->
+
+					<!-- Experience 3: Playpart --------------------------->
+					<div class="container">
+						<!-- Job heading row -->
+						<div class="row">
+
+								<!-- Job title column -->
+								<div class="job-col">
+									<p> Playpart - User Design and Research Intern </p>
+								</div>
+
+								<!-- Job date column -->
+								<div class="date-col">
+									<p> 06/2022 - 08/2022 </p>
+								</div>
+
+						</div> <!-- end of job title & date row -->
+
+						<!-- Job description row -->
+						<div class="row">
+							<div class="job-desc-col">
+								<ul>
+
+									<li>Applied user-centered design thinking to recommend new
+										features and improve existing features of company’s mobile app
+									</li>
+
+									<li>Interviewed and surveyed clients to gather user feedback
+										to support rationalization for proposed design changes
+									</li>
+
+									<li>Conducted competitive analysis to identify gaps in the
+										market by learning from design strengths and weaknesses of
+										other social media apps
+									</li>
+
+									<li>Worked closely with developers on realization of new
+										proposed features from conceptualization to implementation
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div> <!-- end of experience 3 -------------------------->
+
+				</div> <!-- experience col end ---------------------------------------->
+
+				<!-- Skill Column ----------------------------------------------------->
+				<div class="skill-col">
+
+					<!-- SKILLS SECTION -->
+					<h2><i class="fa-solid fa-lightbulb"></i> Skills </h2>
+						<ul>
+							<li>User Experience Design </li>
+							<li>User Experience Research </li>
+							<li>Web Design</li>
+							<li>Usability Testing</li>
+							<li>Competitive Analysis</li>
+							<li>Prototyping</li>
+							<li>Coding</li>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+								<li>Python</li>
+								<li>Java</li>
+							</ul>
+						</ul>
+
+					<!-- TOOLS SECTION -->
+					<h2><i class="fa-solid fa-hammer"></i> Tools</h2>
+						<ul>
+							<li>Figma</li>
+							<li>Adobe Creative Suite</li>
+							<ul>
+								<li>Adobe Photoshop</li>
+								<li>Adobe Illustrator</li>
+								<li>Adobe XD</li>
+								<li>Adobe After Effects</li>
+							</ul>
+							<li>Microsoft Office Suite</li>
+							<ul>
+								<li>Microsoft Excel</li>
+								<li>Microsoft Teams</li>
+								<li>Microsoft Word</li>
+								<li>Microsoft Powerpoint</li>
+							</ul>
+						</ul>
+
+				</div> <!-- skills col end -->
+			</div> <!-- Row div end -->
+		</div> <!-- Container div end -->
+
+		<!-- Download Resume Button -->
+		<a href="documents/Kelly-Lawlor-UX-Resume.pdf" class="button" download target="_blank" rel="noopener noreferrer"><i class="fa fa-download"></i> Download Resume</a>
 
 
+		<!-- Elsewhere you can find me -------------------------------------------------------->
+		<h2 class=h2-center> Elsewhere you can find me! </h2>
+
+		<!-- Social Media Links -->
+		<div class="social-section">
+
+				<!-- LinkedIn -->
+				<a href="https://www.linkedin.com/in/kelly-lawlor/" class="social-large" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+
+				<!-- Github -->
+				<a href="https://github.com/kllylwlr" class="social-large" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a>
+
+		</div>
+
+		<!-- Footer ----------------------------------------------------------------------------->
+		<footer>
+			<div class="container">
+				<div class="row">
+
+					<div class="footer-col">
+						<p id="copyright"> Kelly Lawlor © 2023 </p>
+						<div class="socialLinks">
+							<a href="https://www.linkedin.com/in/kelly-lawlor/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+							<a href="https://github.com/kllylwlr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a>
+						</div>
+					</div>
+
+					<div class="footer-col">
+						<div class="sitemap">
+							<a href="index.html">Home</a>
+							<a href="work.html">Work</a>
+							<a href="About.html">About</a>
+							<a href="contact.html">Contact</a>
+						</div>
+					</div>
+
+				</div>  <!-- Row end -->
+			</div> <!-- Container end -->
+		</footer>
+
+	</body>
 </html>

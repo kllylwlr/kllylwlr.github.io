@@ -1,50 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> Fragrance in Thaw </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+	<!-- Head --------------------------------------------------------------------------------->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
+		<!-- Font Awesome Icons library Link: https://cdnjs.com/libraries/font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  </head>
+		<title> Kelly Lawlor | Contact </title>
+		<link rel="icon" type="image/x-icon" href="images/Favicon.svg">
+		<!-- javascript will go here also -->
 
-  <body>
-    <header>
-      <h1> Fragrance in Thaw </h1>
-    </header>
-      <div class="grid-container">
-        <div class="nav">
-          <a href="index.html">Home</a>
-          &nbsp; | &nbsp;
-          <a href="portfolioShortStories.html">Portfolio</a>
-          &nbsp; | &nbsp;
-          <a href="about.html">About</a>
-          &nbsp; | &nbsp;
-          <a href="contact.html">Contact</a>
-          &nbsp; &nbsp;
-        </div>
+	</head>
 
-        <div class="gridTitle">
-          <p class="Title"> Contact me here! </p>
-          <p> ✉️ email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcRzCMnMrhxBkkvdpNHZdCrbLcWkpNrntKgMDDFjVVmbWjfTCvnzsSRBNFMcdvbhPDBSvKGbd"> klawlor2580@gmail.com</a>
-            <br> <br>
-            📷 instagram: <a href="https://www.instagram.com/kllylwlr/">@kllylwlr</a>
-            <br> <br> <br>
-          </p>
-        </div>
+	<body>
+		<!-- Header section ----------------------------------------------------------------------->
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="header-col">
+						<!-- Logo -->
+						<a href="index.html"><img src="images/Logo.svg" alt="website logo" width="254" height="96" id="logo">
+					</div>
 
-        <div class="gridFooter">
-        </div>
+					<div class="header-col">
+						<!-- Navigation Resource: https://www.w3schools.com/howto/howto_js_topnav.asp -->
+						<div class="topNav">
+							<a href="index.html">Home</a>
+							<a href="work.html">Work</a>
+							<a href="about.html">About</a>
+							<a class="activeNav" href="contact.html">Contact</a>
+						</div>
+					</div>
 
-    <main>
+				</div> <!-- Row div end -->
+			</div> <!-- Container div end -->
+		</header>
 
-    </main>
+		<!-- Contact Form ----------------------------------------------------------------------->
+		<!-- Resource: https://www.w3schools.com/tags/tag_input.asp-->
+		<h1> Contact </h1>
+		<div class="contact-form">
 
-    <footer>
+			<form onsubmit="sendEmail(); reset(); return false;"> <!-- action="/action_page.php" -->
+				<!-- Name Input Field -->
+				<!-- Resource: https://stackoverflow.com/questions/6046110/styling-form-with-label-above-inputs-->
+				<label for="name">Name: </label>
+				<input type="text" id="name" name="name" placeholder="First name Last name" required>
 
-    </footer>
+				<!-- Email Input Field -->
+				<label for="email">Email: </label>
+				<input type="text" id="email" name="email" placeholder="e.g. example@gmail.com" required>
 
-  </body>
+				<!-- Message Input Field -->
+				<label for="message">Message: </label>
+				<!-- <textarea type="textarea" id ="message" name="message" placeholder= "Test" style="height: 400px" required></textarea> -->
+				<textarea type="textarea" id ="message" name="message" rows="12" placeholder= "Test" required></textarea>
 
+				<!-- Send message button -->
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+
+		<!-- Form javascript functionality -->
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script>
+			function sendEmail(){
+				Email.send({
+				    Host : "smtp.gmail.com",
+				    Username : "klawlor2580@gmail.com",
+				    Password : "Th@tcheet@h3624*",
+				    To : 'klawlor2580@gmail.com',
+				    From : document.getElementById("email").value,
+				    Subject : "New Contact Form Message",
+				    Body : "Name: " + document.getElementById("name").value
+									+ "<br> Email: " + document.getElementById("email").value
+									+ "<br> Message: " + document.getElementById("message").value
+				}).then(
+				  message => alert("Message Sent Successfully!")
+				);
+			}
+
+		</script>
+
+		<!-- Elsewhere you can find me -------------------------------------------------------->
+		<h2 class=h2-center> Elsewhere you can find me! </h2>
+
+		<!-- Social Media Links -->
+		<div class="social-section">
+
+				<!-- LinkedIn -->
+				<a href="https://www.linkedin.com/in/kelly-lawlor/" class="social-large" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+
+				<!-- Github -->
+				<a href="https://github.com/kllylwlr" class="social-large" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a>
+
+		</div>
+
+
+	<!-- Footer ----------------------------------------------------------------------------->
+	<footer>
+		<div class="container">
+			<div class="row">
+
+				<div class="footer-col">
+					<p id="copyright"> Kelly Lawlor © 2023 </p>
+					<div class="socialLinks">
+						<a href="https://www.linkedin.com/in/kelly-lawlor/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+						<a href="https://github.com/kllylwlr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a>
+					</div>
+				</div>
+
+				<div class="footer-col">
+					<div class="sitemap">
+						<a href="index.html">Home</a>
+						<a href="work.html">Work</a>
+						<a href="About.html">About</a>
+						<a href="contact.html">Contact</a>
+					</div>
+				</div>
+
+			</div>  <!-- Row end -->
+		</div> <!-- Container end -->
+	</footer>
+
+	</body>
 
 </html>

@@ -1,0 +1,16 @@
+<!-- Original header -->
+	<header>
+
+		<!-- Logo -->
+		<img src="images/Logo.svg" alt="website logo" width="254" height="96" id="logo">
+
+		<!-- Navigation ------------------------------------------------------->
+		<!-- Resource: https://www.w3schools.com/howto/howto_js_topnav.asp -->
+		<div class="topNav">
+			<a class="activeNav" href="index.html">Home</a>
+			<a href="work.html">Work</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</div>
+
+	</header>
