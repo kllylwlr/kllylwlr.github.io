@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <script>
+      function checker() {
+          $.post("login.php", $("#loginForm").serializeArray(), function(data) {
+
+              if (data.trim() === "success") {
+                var email = $("#email").val();
+                var href = "user.html";
+                var windowName = '_blank';
+                var newWindow = window.open(href, windowName);
+
+             	newWindow.document.write(" <link rel='stylesheet' href='style.css' /> ");
+							newWindow.document.write(" <nav> <ul> <div class='navRight'> <img class='navLogo' src='images/codebrew-logo.png'> <li> <a href='index.html'>HOME</a> </li> <li> <a href='products.html'> MENU</a></li> <li> <a href='search.html'> BROWSE ITEMS </a> </li> <li> <a class='activeLink' href='login.html'> LOG IN </a> </li> <li> <a href='signup.html'> SIGN UP </a> </li> <li> <a href='contact.html'> CONTACT US </a> </li> </div> </ul> </nav> ");
+
+              newWindow.document.write("<h1>USERS PAGE</h1>");
+							newWindow.document.write("<div class='yellowDiv'> ");
+              newWindow.document.write("<p class='centerTxt boldTxt'>Welcome " + email + "</p>");
+              newWindow.document.write("<p class='centerTxt'> We are so glad you joined the Cafe CodeBrew Family!</p>");
+							newWindow.document.write("</div> <br><br>");
+							//footer code
+							newWindow.document.write("<footer> <div class='flexContainer'> <div class='flexCol40'> <img class='logo' src='images/codebrew-logo.png'> <p> Developing the best coffee since 2023.</p> <p>Copyright 2023 - Cafe CodeBrew</p> </div>");
+							newWindow.document.write("<div class='flexCol25'> <p class='footerSecHead'> PAGES </p> <ul> <li> <a href='index.html'> Home </a> </li> <li> <a href='products.html'> Menu </a> </li> <li> <a href='search.html'> Search </a> </li> <li> <a href='contact.html'> Contact </a> </li> </ul> </div>");
+							newWindow.document.write("<div class='flexCol25'> <p class='footerSecHead'> CONTACT </p> <ul> <li> <i class='fa-solid fa-location-dot'></i> 16 Fake Road, New York, NY 10003</li> <li> <i class='fa-solid fa-phone'></i> (212) XXX - XXXX </li> <li> <i class='fa-solid fa-envelope'></i> cafecodebrew@gmail.com </li> </ul> </div> </div> </footer>");
+              newWindow.document.close();
+              } else {
+
+                  $("#results").html("Incorrect username or password. Please try again.");
+              }
+          });
+      }
+  </script>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <div class="navRight">
+        <img class="navLogo" src="images/codebrew-logo.png">
+        <li> <a href="index.html">HOME</a> </li>
+        <li> <a href="products.html"> MENU</a></li>
+        <li> <a href="search.html"> BROWSE ITEMS </a> </li>
+        <li> <a class="activeLink" href="login.html"> LOG IN </a> </li>
+        <li> <a href="signup.html"> SIGN UP </a> </li>
+        <li> <a href="contact.html"> CONTACT US </a> </li>
+      </div>
+    </ul>
+  </nav>
+
+  <h1>LOG IN</h1>
+  <div id="formContainer">
+    <form id="loginForm" action="login.php" method="post" onsubmit="checker(); return false;">
+      <label for="email">Email Address: </label>
+      <input name="email" id="email" type="text">
+
+      <label for="password">Password: </label>
+      <input name="password" id="password" type="text">
+
+      <input name ="submit" type="submit" id="submit" value="LOG IN">
+    </form>
+    <div id="results"></div>
+
+    <p id="question">Don't have an account?
+      <a href="signup.html">Sign up</a>
+    </p>
+  </div>
+
+  <!-- FOOTER -------------------------------------------------------------->
+  <footer>
+    <div class="flexContainer">
+      <!-- Cafe Blurb Section -->
+      <div class="flexCol40">
+        <img class="logo" src="images/codebrew-logo.png">
+        <p> Developing the best coffee since 2023.</p>
+        <p>Copyright 2023 - Cafe CodeBrew</p>
+      </div>
+
+      <!-- Pages Section -->
+      <div class="flexCol25">
+        <p class="footerSecHead"> PAGES </p>
+        <ul>
+          <li> <a href="index.html"> Home </a> </li>
+          <li> <a href="products.html"> Menu </a> </li>
+          <li> <a href="search.html"> Search </a> </li>
+          <li> <a href="contact.html"> Contact </a> </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="flexCol25">
+        <p class="footerSecHead"> CONTACT </p>
+        <ul>
+          <li> <i class="fa-solid fa-location-dot"></i> 16 Courant, New York, NY 10003</li>
+          <li> <i class="fa-solid fa-phone"></i> (212) XXX - XXXX </li>
+          <li> <i class="fa-solid fa-envelope"></i> cafecodebrew@gmail.com </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

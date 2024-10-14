@@ -1,0 +1,582 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  /* Font for website */
+  font-family: 'Poppins';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* ^ moved here bc if put in '*' will make everything not have margin & padding */
+  /* temp hiding
+  display: flex;
+  flex-direction: column;
+  */
+  /* Set the main axis to column */
+  align-items: center;
+  min-height: 100vh;
+  /* Use viewport height for minimum height */
+  background-color: #FFFF;
+}
+
+/* NAVIGATION BAR --------------------------------------------------------*/
+nav {
+  background-color: #502E2C;
+  padding: 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  /* floating to right messes up formatting for some reason */
+}
+
+.navRight {
+  text-align: right;
+  padding: 10px;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 14px;
+}
+
+nav a {
+  font-weight: 500;
+  color: #EFDFC5;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  /*ease in & out transition*/
+}
+
+/* Active Nav Link */
+nav .activeLink {
+  color: #E37C33;
+  text-decoration: underline;
+}
+
+/* Hovered Nav Link */
+nav a:hover {
+  color: #E69962;
+}
+
+.navLogo {
+  width: 20%;
+  max-width: 180px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+/* HEADINGS & OTHER TEXT -------------------------------------------------------------*/
+h1 {
+  font-size: 40px;
+  color: #333;
+  margin: 20px 0;
+  text-align: center;
+  /* Adjust the margin as needed */
+}
+
+h2 {
+  font-size: 30px;
+  color: #502E2C;
+  text-align: center;
+}
+
+/* For h2 elements that r left aligned */
+.h2Left {
+  text-align: left;
+  margin-left: 24px;
+}
+
+/* Class to make any text white (works on p, headers, etc) */
+.whiteTxt {
+  color: white;
+}
+
+/* Class to make any text or in-line block element centered */
+.centerTxt {
+  text-align: center;
+}
+
+/* BUTTONS -------------------------------------------------------------*/
+button {
+  background-color: #E37C33;
+  border-radius: 64px;
+  border: none;
+  padding: 10px 16px 10px 16px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  /*top, right, bottom, left */
+  /* text style */
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}
+
+button:hover {
+  background-color: white;
+  color: #E37C33;
+}
+
+/* Form Submit Button */
+input[type=submit] {
+  background-color: #E37C33;
+  border-radius: 64px;
+  border: none;
+  padding: 10px 16px 10px 16px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  /*top, right, bottom, left */
+  /* text style */
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  /* center align */
+  display: block;
+  margin: auto;
+}
+
+/* FOOTER ----------------------------------------------- */
+footer {
+  background-color: #502E2C;
+  width: 100%;
+  padding: 30px;
+}
+
+/* Header for Footer Sections*/
+.footerSecHead {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+footer p {
+  color: white;
+  font-size: 14px;
+}
+
+footer li {
+  font-size: 14px;
+  color: white;
+  list-style-type: none;
+  margin: 6px 0px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+footer a:hover {
+  color: #E69962;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+.logo {
+  width: 70%;
+  margin-top: 20px;
+}
+
+
+
+/* Index Page Elements --------------------------------------------------*/
+/* Div w/ Img Background */
+.imgDiv {
+  background-image: url('images/cafe-bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+  /*padding: 25px;*/
+	padding: 5%;
+
+	/*height: 400px;*/
+	height: 450px;
+  /*background-size: 100% auto;*/
+  /* so full img seen */
+}
+
+.imgDiv p {
+  color: white;
+}
+
+/*Img Div Header */
+.imgDivHeader {
+  color: white;
+  text-align: left;
+	font-size: 40px;
+}
+
+.yellowDiv {
+  background-color: #FFE9D0;
+  margin: 0px;
+  padding: 30px;
+}
+
+/* Popular Product Names */
+.popProdNames {
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Game Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background: #502E2C;
+  padding: 40px 60px;
+  /*margin-bottom: 20px;*/
+}
+
+/* Game Div */
+.game {
+  width: 430px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Game Item */
+.item {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background: white;
+  transform: rotateY(180deg);
+  transition: 0.5s;
+}
+
+.item.boxOpen {
+  transform: rotateY(0deg);
+}
+
+.item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #FFE9D0;
+  transition: 0.5s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+}
+
+.boxOpen:after,
+.boxMatch:after {
+  transform: rotateY(180deg);
+}
+
+.boxMatch {
+  transform: rotateY(180deg);
+}
+
+/* Reset Button */
+.reset {
+  padding: 15px 20px;
+  border: none;
+  font-size: 20px;
+}
+
+/* Reset Button: Hover */
+.reset:hover {
+  color: black;
+}
+
+
+/* Contact Page Elements ----------------------------------------------- */
+input {
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 3.5px solid #502E2C;
+  font-size: 14px;
+  resize: none;
+  /* can't be resized */
+}
+
+input[type=date] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 3.5px solid #502E2C;
+  font-size: 14px;
+}
+
+#submitBtn {
+  margin-top: 30px;
+}
+
+/* Products Page Elements----------------------------------------------------*/
+.prodContainer {
+  background-color: #FFE9D0;
+  border-radius: 14px;
+  width: 30%;
+  text-align: center;
+  margin: 1%;
+  padding: 12px;
+}
+
+.prodContainer p {
+  color: #502E2C;
+}
+
+.menuImg {
+  width: 90%;
+	display: block;
+	 margin: auto;
+  /*text-align: center;*/
+}
+
+.prodPrice {
+  font-weight: 700;
+}
+
+.prodDesc {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+/* Quantity Incrementor */
+.quantInc {
+  display: inline-block;
+  border: 3px solid #502E2C;
+  border-radius: 10px;
+  background-color: white;
+  padding: 2px;
+}
+
+.quantField {
+  display: inline-block;
+  /* inline block makes it so border wraps tightly to contents */
+  width: 50px;
+  /* border-color: purple; */
+  border: none;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.btnPlus {
+  color: #502E2C;
+  font-weight: bold;
+  display: inline-block;
+  background-color: white;
+  border: none;
+  margin: 0;
+  padding: 8px;
+}
+
+.btnMinus {
+  color: #502E2C;
+  font-weight: bold;
+  display: inline-block;
+  background-color: white;
+  border: none;
+  margin: 0;
+  padding: 8px;
+}
+
+/* Checkout Bar */
+.checkoutBar {
+  width: 100%;
+  /*top, right, bottom, left */
+  padding: 10px 20px;
+  background-color: #502E2C;
+  border-top: 3px solid white;
+
+  /* fixed - checkbar always at bottom of user's screen */
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.checkoutBar p {
+  /* display: inline;*/
+  float: left;
+  color: white;
+}
+
+.checkoutBar input[submit] {
+  /*display: inline; */
+  float: right;
+}
+
+/* Checkout Button */
+#checkoutBtn {
+  margin: auto;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.userInfoContainer {
+	background: #502E2C;
+	padding: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.userInfoContainer label {
+	color: white;
+}
+
+.userInfoContainer input[type=text]{
+	border: 3.5px solid #FFE9D0;
+	background-color: #FFE9D0;
+}
+
+/* Receipt Div */
+.receiptDiv {
+	width: 80%;
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px 20px 20px 20px;
+	margin: auto;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.receiptDiv h3 {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.receiptDiv h4 {
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+
+.gridContainer {
+	display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.gridItem {
+	/*background-color: rgba(255, 255, 255, 0.8);*/
+  padding: 10%;
+  text-align: left;
+}
+
+.receiptDiv p{
+	font-size: 16px;
+}
+
+.receiptImg {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+/* CATALOGUE ELEMENTS -- */
+.catalogContainer {
+	padding: 3%;
+}
+
+/* Log In Page Elements -------------------------------------------------*/
+/* Log In Page Specific Styles ------------------------------------------*/
+#formContainer {
+  width: 50%;
+  padding: 30px;
+  margin: auto;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 3.5px solid #502E2C;
+  font-size: 14px;
+}
+
+label {
+  /*text-align: left;*/
+  display: block;
+  font-weight: 700;
+  color: #502E2C;
+  margin-bottom: 5px;
+}
+
+form p {
+  color: #502E2C;
+  font-weight: bold;
+  text-align: center;
+}
+
+#question {
+  text-align: center;
+  color: #502E2C;
+  padding-top: 20px;
+}
+
+a {
+  color: #E37C33;
+}
+
+/* SEARCH/BROWSE PAGE ELEMENTS --------------------------------------*/
+#searchContainer {
+	height: 300px;
+  width: 80%;
+  padding: 30px;
+  margin: auto;
+}
+
+/* Flex Formatting ------------------------------------------------------*/
+/* Flex Formatting*/
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 60% width column */
+.flexCol60 {
+  width: 60%;
+}
+
+/* 40% width column */
+.flexCol40 {
+  width: 40%;
+}
+
+/* 30% width column */
+.flexCol30 {
+  width: 30%;
+}
+
+/* 25% width column */
+.flexCol25 {
+  width: 25%;
+}
+
+/* FONT AWESOME ICONS -----------------------------------------------------*/
+i {
+  color: #E69962;
+  margin-right: 2px;
+}
+
+/* MISC */
+.phpInput {
+	display: none;
+}

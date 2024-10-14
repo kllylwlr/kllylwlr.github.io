@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Cafe Codebrew - Home </title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons library Link: -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+  <!-- Navigation Bar ------------->
+  <nav>
+    <ul>
+      <div class="navRight">
+        <img class="navLogo" src="images/codebrew-logo.png">
+        <li> <a class="activeLink" href="index.html">HOME</a> </li>
+        <li> <a href="products.html"> MENU</a></li>
+        <li> <a href="search.html"> BROWSE ITEMS </a> </li>
+        <li> <a href="login.html"> LOG IN </a> </li>
+        <li> <a href="signup.html"> SIGN UP </a> </li>
+        <li> <a href="contact.html"> CONTACT US </a> </li>
+      </div>
+    </ul>
+  </nav>
+
+  <!-- Div w/ Image ------------------->
+  <div class="imgDiv">
+    <div class="flexCol60">
+      <h2 class="imgDivHeader">GRAB A BYTE...</h2>
+      <p> Cafe Codebrew is a place for coders to come together. Enjoy the wonderful
+        atmosphere and carefully curated menu. Whether you're taking a break between
+        programming projects or you need perfect place to be productive, Cafe Codebrew
+        has you covered!
+      </p>
+      <!--<button> <a href="products.html">OUR MENU</a> </button>-->
+      <button id="menuBtn"> OUR MENU </button>
+    </div>
+
+  </div>
+
+  <!-- Popular Products Section -------->
+  <div class="yellowDiv">
+    <h2> POPULAR PRODUCTS </h2>
+    <div class="flexContainer">
+      <!-- Item 1 -->
+      <div class="flexCol30">
+        <img class="menuImg" src="images/pop-cold-brew.png">
+        <p class="popProdNames"> Cold Brew </p>
+      </div>
+      <!-- Item 2 -->
+      <div class="flexCol30">
+        <img class="menuImg" src="images/pop-hot-coffee.png">
+        <p class="popProdNames"> Hot Coffee </p>
+      </div>
+      <!-- Item 3 -->
+      <div class="flexCol30">
+        <img class="menuImg" src="images/pop-apple-danish.png">
+        <p class="popProdNames"> Apple Danish </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Game Section --------------------->
+  <div class="container">
+    <h2 class="whiteTxt">MEMORY GAME</h2>
+    <div class="game"> </div>
+    <button class="reset" onclick="window.location.reload();">RESET</button>
+  </div>
+  </div>
+  <script src="script.js"></script>
+
+  <!-- About Us Section ---------------------------------->
+  <div class="yellowDiv">
+    <h2> ABOUT US </h2>
+    <p> We're a group of students passionate about coding and coffee! We created Cafe Codebrew to
+      be a place where coders can relax or be productive. We want to foster an environment and
+      coding community.
+    </p>
+  </div>
+
+  <!-- FOOTER ---------------------------------------------->
+  <footer>
+    <div class="flexContainer">
+      <!-- Cafe Blurb Section -->
+      <div class="flexCol40">
+        <img class="logo" src="images/codebrew-logo.png">
+        <p> Developing the best coffee since 2023.</p>
+        <p>&copy 2023 - Cafe CodeBrew</p>
+      </div>
+
+      <!-- Pages Section -->
+      <div class="flexCol25">
+        <p class="footerSecHead"> PAGES </p>
+        <ul>
+          <li> <a href="index.html"> Home </a> </li>
+          <li> <a href="products.html"> Menu </a> </li>
+          <li> <a href="search.html"> Search </a> </li>
+          <li> <a href="contact.html"> Contact </a> </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="flexCol25">
+        <p class="footerSecHead"> CONTACT </p>
+        <ul>
+          <li> <i class="fa-solid fa-location-dot"></i> 16 Courant Road, New York, NY 10003</li>
+          <li> <i class="fa-solid fa-phone"></i> (212) XXX - XXXX </li>
+          <li> <i class="fa-solid fa-envelope"></i> cafecodebrew@gmail.com </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

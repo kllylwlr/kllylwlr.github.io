@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- <link rel="stylesheet" href="signup.css" /> -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <nav>
+
+    <ul>
+      <div class="navRight">
+        <img class="navLogo" src="images/codebrew-logo.png">
+        <li> <a href="index.html">HOME</a> </li>
+        <li> <a href="products.html"> MENU</a></li>
+        <li> <a class="activeLink" href="search.html"> BROWSE ITEMS </a> </li>
+        <li> <a href="login.html"> LOG IN </a> </li>
+        <li> <a href="signup.html"> SIGN UP </a> </li>
+        <li> <a href="contact.html"> CONTACT US </a> </li>
+      </div>
+    </ul>
+  </nav>
+
+  <h1>BROWSE ITEMS</h1>
+  <div id=searchContainer>
+    <form action="search.php" method=post>
+      <input type=text placeholder="Search for a product..." name=searchInput id=searchInput>
+      <input type=submit value=SEARCH name=searchBtn id=searchBtn>
+  </div>
+
+
+  <!-- FOOTER -------------------------------------------------------------->
+  <footer>
+    <div class="flexContainer">
+      <!-- Cafe Blurb Section -->
+      <div class="flexCol40">
+        <img class="logo" src="images/codebrew-logo.png">
+        <p> Developing the best coffee since 2023.</p>
+        <p>&copy 2023 - Cafe CodeBrew</p>
+      </div>
+
+      <!-- Pages Section -->
+      <div class="flexCol25">
+        <p class="footerSecHead"> PAGES </p>
+        <ul>
+          <li> <a href="index.html"> Home </a> </li>
+          <li> <a href="products.html"> Menu </a> </li>
+          <li> <a href="search.html"> Search </a> </li>
+          <li> <a href="contact.html"> Contact </a> </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="flexCol25">
+        <p class="footerSecHead"> CONTACT </p>
+        <ul>
+          <li> <i class="fa-solid fa-location-dot"></i> 16 Courant, New York, NY 10003</li>
+          <li> <i class="fa-solid fa-phone"></i> (212) XXX - XXXX </li>
+          <li> <i class="fa-solid fa-envelope"></i> cafecodebrew@gmail.com </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+
+</HTML>

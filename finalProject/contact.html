@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cafe Codebrew | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons library Link: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+
+  <body>
+    <!-- NAVIGATION BAR ------------------------------------------------------>
+    <nav>
+      <!-- Logo -->
+      <!-- Links -->
+      <ul>
+        <div class="navRight">
+          <img class="navLogo" src="images/codebrew-logo.png">
+          <li> <a href="index.html">HOME</a> </li>
+          <li> <a href="products.html"> MENU</a></li>
+          <li> <a href="search.html"> BROWSE ITEMS </a> </li>
+          <li> <a href="login.html"> LOG IN </a> </li>
+          <li> <a href="signup.html"> SIGN UP </a> </li>
+          <li> <a class="activeLink" href="contact.html"> CONTACT US </a> </li>
+        </div>
+      </ul>
+    </nav>
+
+  <!-- Contact Form ------------------------------------------>
+  <div id="formContainer">
+    <h1>CONTACT US</h1>
+    <p class="centerTxt"> Fill out this form to get in touch with us! </p>
+
+    <form method=post id=contactForm>
+      <!-- Name Field -->
+      <label for=name>Name: </label>
+      <input type=text id=name name=name placeholder="Enter your name">
+
+      <!-- Country Field -->
+      <label for=country>Country: </label>
+      <input type=text id=country name=country placeholder="Enter your country">
+
+      <!-- Date of Birth Field -->
+      <label for=birth>Date of birth: </label>
+      <input type=date name=birth id=birth>
+
+      <!-- Phone Number Field -->
+      <label for=phone>Phone number: </label>
+      <input type=text name=phone id=phone>
+
+      <!-- Email Field -->
+      <label for=email>Email Address: </label>
+      <input type=text name=email id=email><br>
+
+      <!-- Message -->
+      <label for=message>Message: </label>
+      <textarea rows="8" cols="80" placeholder="Leave us a message!" name=message
+        id=message></textarea>
+
+      <input type=submit value="SUBMIT" name=submitBtn id=submitBtn>
+
+    </form>
+  </div>
+
+    <!-- FOOTER ---------------------------------------------->
+    <footer>
+      <div class="flexContainer">
+        <!-- Cafe Blurb Section -->
+        <div class="flexCol40">
+          <img class="logo" src="images/codebrew-logo.png">
+          <p> Developing the best coffee since 2023.</p>
+          <p>&copy 2023 - Cafe CodeBrew</p>
+        </div>
+
+        <!-- Pages Section -->
+        <div class="flexCol25">
+          <p class="footerSecHead"> PAGES </p>
+          <ul>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="products.html"> Menu </a> </li>
+            <li> <a href="search.html"> Search </a> </li>
+            <li> <a href="contact.html"> Contact </a> </li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="flexCol25">
+          <p class="footerSecHead"> CONTACT </p>
+          <ul>
+            <li> <i class="fa-solid fa-location-dot"></i> 16 Courant Road, New York, NY 10003</li>
+            <li> <i class="fa-solid fa-phone"></i> (212) XXX - XXXX </li>
+            <li> <i class="fa-solid fa-envelope"></i> cafecodebrew@gmail.com </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

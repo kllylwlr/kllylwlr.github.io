@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Cafe Codebrew | Menu </title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons library Link: https://cdnjs.com/libraries/font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- NAVIGATION BAR ------------------------------------------------------>
+  <nav>
+    <!-- Logo -->
+    <!-- Links -->
+    <ul>
+      <div class="navRight">
+        <img class="navLogo" src="images/codebrew-logo.png">
+        <li> <a href="index.html">HOME</a> </li>
+        <li> <a class="activeLink" href="products.html"> MENU</a></li>
+        <li> <a href="search.html"> BROWSE ITEMS </a> </li>
+        <li> <a href="login.html"> LOG IN </a> </li>
+        <li> <a href="signup.html"> SIGN UP </a> </li>
+        <li> <a href="contact.html"> CONTACT US </a> </li>
+      </div>
+    </ul>
+  </nav>
+
+  <h1>MENU</h1>
+  <form id="menuId">
+    <!-- HOT DRINKS --------------------------------------------------------------------------->
+    <h2 class="h2Left">HOT DRINKS</h2>
+
+    <!-- Flex Container (Display as row) -->
+    <div class="flexContainer">
+      <!-- Item: Hot Coffee ----------->
+      <div class="prodContainer">
+        <img class="menuImg" src="images/hot-coffee.png">
+				<p class="prodName"> Hot Coffee </p>
+				<p class="prodDesc"> A piping hot cup of freshly brewed coffee. </p>
+        <p class="prodPrice">$3.00</p>
+        <!-- quantity selector -->
+        <div class="quantInc">
+          <!-- <input type="button" value="-" class="btnMinus"> -->
+          <input type="number" name="quantity" value="0" class="quantField" min="0">
+          <!-- <input type="button" value="+" class="btnPlus"> -->
+        </div>
+
+				<p class="prodSubtotal"> Subtotal: $0.00</p>
+      </div>
+
+      <!-- Item: Cappuccino ----------->
+      <div class="prodContainer">
+        <img class="menuImg" src="images/cappuccino.png">
+        <p class="prodName"> Cappuccino </p>
+				<p class="prodDesc"> A triple espresso shot drink topped with foamed milk </p>
+        <p class="prodPrice">$4.50</p>
+        <!-- quantity selector -->
+        <div class="quantInc">
+          <!-- <input type="button" value="-" class="btnMinus"> -->
+          <input type="number" name="quantity" value="0" class="quantField" min="0">
+          <!-- <input type="button" value="+" class="btnPlus"> -->
+        </div>
+				<p class="prodSubtotal"> Subtotal: $0.00</p>
+      </div>
+
+      <!-- Item: Americano ----------->
+      <div class="prodContainer">
+        <img class="menuImg" src="images/americano.png">
+        <p class="prodName"> Americano </p>
+				<p class="prodDesc"> Rich shots of espresso combined with hot spring water.  </p>
+        <p class="prodPrice">$2.50</p>
+        <!-- quantity selector -->
+        <div class="quantInc">
+          <!-- <input type="button" value="-" class="btnMinus"> -->
+          <input type="number" name="quantity" value="0" class="quantField" min="0">
+          <!-- <input type="button" value="+" class="btnPlus"> -->
+        </div>
+				<p class="prodSubtotal"> Subtotal: $0.00</p>
+      </div>
+    </div>
+
+    <!-- COLD DRINKS --------------------------------------------------------------------------->
+    <h2 class="h2Left">COLD DRINKS</h2>
+    <div class="flexContainer">
+      <!-- Item: Cold Brew ----------->
+      <div class="prodContainer">
+        <img class="menuImg" src="images/iced-coffee.png">
+        <p class="prodName"> Cold Brew </p>
+				<p class="prodDesc"> Our cafe's signature cold brew, infused with rich vanilla. </p>
+        <p class="prodPrice">$4.50</p>
+        <!-- quantity selector -->
+        <div class="quantInc">
+          <!-- <input type="button" value="-" class="btnMinus"> -->
+          <input type="number" name="quantity" value="0" class="quantField" min="0">
+          <!-- <input type="button" value="+" class="btnPlus"> -->
+        </div>
+				<p class="prodSubtotal"> Subtotal: $0.00</p>
+      </div>
+
+      <!-- Item: Frappe ----------->
+      <div class="prodContainer">
+        <img class="menuImg" src="images/frappe.png">
+        <p class="prodName"> Frappe </p>
+				<p class="prodDesc"> Frappe topped with whipped cream and a fudge syrup drizzle. </p>
+        <p class="prodPrice">$6.00</p>
+        <!-- quantity selector -->
+        <div class="quantInc">
+          <!-- <input type="button" value="-" class="btnMinus"> -->
+          <input type="number" name="quantity" value="0" class="quantField" min="0">
+          <!-- <input type="button" value="+" class="btnPlus"> -->
+        </div>
+				<p class="prodSubtotal"> Subtotal: $0.00</p>
+      </div>
+
+      <!-- Item: Iced Tea ----------->
+      <div class="prodContainer">
+        <img class="menuImg" src="images/iced-tea.png">
+        <p class="prodName"> Peach Ice Tea </p>
+				<p class="prodDesc"> A refreshing glass of peach ice tea brewed in-house. </p>
+        <p class="prodPrice">$3.00</p>
+        <!-- quantity selector -->
+        <div class="quantInc">
+          <!-- <input type="button" value="-" class="btnMinus"> -->
+          <input type="number" name="quantity" value="0" class="quantField" min="0">
+          <!-- <input type="button" value="+" class="btnPlus"> -->
+        </div>
+				<p class="prodSubtotal"> Subtotal: $0.00</p>
+      </div>
+    </div>
+
+    <!-- BAKED GOODS --------------------------------------------------------------------------->
+    <h2 class="h2Left">BAKED GOODS</h2>
+    <!-- Flex Container -->
+    <div class="flexContainer">
+      <!-- Item: Apple Danish ----------->
+      <div class="prodContainer">
+        <img class="menuImg" src="images/apple-danish.png">
+        <p class="prodName"> Apple Danish </p>
+				<p class="prodDesc"> A buttery pastry dough filled with sweet apple-cinamon filling. </p>
+        <p class="prodPrice">$4.00</p>
+        <!-- quantity selector -->
+        <div class="quantInc">
+          <!-- <input type="button" value="-" class="btnMinus"> -->
+          <input type="number" name="quantity" value="0" class="quantField" min="0">
+          <!-- <input type="button" value="+" class="btnPlus"> -->
+        </div>
+				<p class="prodSubtotal"> Subtotal: $0.00</p>
+      </div>
+
+      <!-- Item: Almond Croissant ----------->
+      <div class="prodContainer">
+        <img class="menuImg" src="images/almond-croissant.png">
+        <p class="prodName"> Almond Croissant </p>
+				<p class="prodDesc"> A flaky croissant topped with powdered sugar and almonds.  </p>
+        <p class="prodPrice">$4.50</p>
+        <!-- quantity selector -->
+        <div class="quantInc">
+          <!-- <input type="button" value="-" class="btnMinus"> -->
+          <input type="number" name="quantity" value="0" class="quantField" min="0">
+          <!-- <input type="button" value="+" class="btnPlus"> -->
+        </div>
+				<p class="prodSubtotal"> Subtotal: $0.00</p>
+      </div>
+
+      <!-- Item: Cinnamon Bun ----------->
+      <div class="prodContainer">
+        <img class="menuImg" src="images/cinnamon-bun.png">
+        <p class="prodName"> Cinnamon Bun </p>
+				<p class="prodDesc"> Classic cinnamon roll dusted in sugar. </p>
+        <p class="prodPrice">$3.50</p>
+        <!-- quantity selector -->
+        <div class="quantInc">
+          <!-- <input type="button" value="-" class="btnMinus"> -->
+          <input type="number" name="quantity" value="0" class="quantField" min="0">
+          <!-- <input type="button" value="+" class="btnPlus"> -->
+        </div>
+				<p class="prodSubtotal"> Subtotal: $0.00</p>
+      </div>
+    </div>
+
+		<!-- PERSONAL INFO SECTION -->
+		<div class="userInfoContainer">
+			<h2 class="whiteTxt"> PERSONAL INFORMATION </h2>
+			<!-- Name -->
+			<label for="name">Name: </label>
+			<input type="text" id="name" name="Full Name" value=""></input>
+			<!-- value value="Will Lawson" -->
+			<!-- Phone Number -->
+			<label for="phone">Phone Number: </label>
+			<input type="text" id="phone" name="Phone Number" value="">
+			<!-- value="715-785-5579" -->
+
+			<!-- Email -->
+			<label for="email">Email Address: </label>
+			<input type="text" id="email" name="Email Address" value="">
+			<!-- value="wgreen2483@gmail.com" -->
+			<!-- Zip Code -->
+			<label for="zipcode">Zip Code: </label>
+			<input type="text" id="zipcode" name="Zip Code">
+			<!-- value="11788" -->
+			<!-- Credit Card Information -->
+			<label for="creditCard">Credit Card: </label>
+			<input type="text" id="creditCard" name="Credit Card">
+			<!-- value="1234567890" -->
+			<br>
+		</div>
+
+		 <!-- Checkout Bar ----------------------------------->
+     <div class="checkoutBar">
+       <p id="total">Total: $0.00</p>
+       <input type="submit" value="CHECKOUT" id="checkoutBtn"></input>
+			 <!-- <button type="button" id="checkoutBtn">CHECKOUT</button> -->
+     </div>
+
+  </form>
+
+	<!-- FORM FOR PRODUCTS.PHP -------------------------------------------------------->
+	<h2> CATALOG </h2>
+	<p class="centerTxt"> Want to see a simplified version of the menu? Click the view catalog button! </p>
+	<!-- Values of product as input items for php -->
+	<form action="products.php" method="post">
+		<!-- ITEM 1: HOT COFFEE -->
+		<input class="phpInput" type="text" name="prod1Name" value="Hot Coffee">
+		<input class="phpInput" type="text" name="prod1Desc" value="A piping hot cup of freshly brewed coffee.">
+		<input class="phpInput" type="text" name="prod1Price" value="3.00">
+		<!-- ITEM 2: CAPPUCCINO -->
+		<input class="phpInput" type="text" name="prod2Name" value="Cappuccino">
+		<input class="phpInput" type="text" name="prod2Desc" value="A triple espresso shot drink topped with foamed milk.">
+		<input class="phpInput" type="text" name="prod2Price" value="4.50">
+		<!-- ITEM 3: AMERICANO -->
+		<input class="phpInput" type="text" name="prod3Name" value="Americano">
+		<input class="phpInput" type="text" name="prod3Desc" value="Rich shots of espresso combined with hot spring water.">
+		<input class="phpInput" type="text" name="prod3Price" value="2.50">
+		<!-- ITEM 4: COLD BREW -->
+		<input class="phpInput" type="text" name="prod4Name" value="Cold Brew">
+		<input class="phpInput" type="text" name="prod4Desc" value="Our cafe's signature cold brew, infused with rich vanilla.">
+		<input class="phpInput" type="text" name="prod4Price" value="4.50">
+		<!-- ITEM 5: FRAPPE -->
+		<input class="phpInput" type="text" name="prod5Name" value="Frappe">
+		<input class="phpInput" type="text" name="prod5Desc" value="Frappe topped with whipped cream and a fudge syrup drizzle. ">
+		<input class="phpInput" type="text" name="prod5Price" value="6.00">
+		<!-- ITEM 6: ICE TEA -->
+		<input class="phpInput" type="text" name="prod6Name" value="Peach Ice Tea">
+		<input class="phpInput" type="text" name="prod6Desc" value="A refreshing glass of peach ice tea brewed in-house. ">
+		<input class="phpInput" type="text" name="prod6Price" value="3.00">
+		<!-- ITEM 7: APPLE DANISH -->
+		<input class="phpInput" type="text" name="prod7Name" value="Apple Danish">
+		<input class="phpInput" type="text" name="prod7Desc" value="A buttery pastry dough filled with sweet apple-cinnamon filling.">
+		<input class="phpInput" type="text" name="prod7Price" value="4.00">
+		<!-- ITEM 8: ALMOND CROISSANT -->
+		<input class="phpInput" type="text" name="prod8Name" value="Almond Croissant">
+		<input class="phpInput" type="text" name="prod8Desc" value="A flaky croissant topped with powdered sugar and almonds.">
+		<input class="phpInput" type="text" name="prod8Price" value="4.50">
+		<!-- ITEM 9: Cinnamon Bun -->
+		<input class="phpInput" type="text" name="prod9Name" value="Cinnamon Bun">
+		<input class="phpInput" type="text" name="prod9Desc" value="Classic cinnamon roll dusted in sugar.">
+		<input class="phpInput" type="text" name="prod9Price" value="3.50">
+
+		<!-- Submit Button -->
+		<input type="submit" value="VIEW CATALOG">
+	</form>
+	<br><br>
+
+</body>
+
+<!-- FOOTER ---------------------------------------------->
+<footer>
+  <div class="flexContainer">
+    <!-- Cafe Blurb Section -->
+    <div class="flexCol40">
+      <img class="logo" src="images/codebrew-logo.png">
+      <p> Developing the best coffee since 2023.</p>
+      <p>&copy 2023 - Cafe CodeBrew</p>
+    </div>
+
+    <!-- Pages Section -->
+    <div class="flexCol25">
+      <p class="footerSecHead"> PAGES </p>
+      <ul>
+        <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="products.html"> Menu </a> </li>
+        <li> <a href="search.html"> Search </a> </li>
+        <li> <a href="contact.html"> Contact </a> </li>
+      </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="flexCol25">
+      <p class="footerSecHead"> CONTACT </p>
+      <ul>
+        <li> <i class="fa-solid fa-location-dot"></i> 16 Courant, New York, NY 10003</li>
+        <li> <i class="fa-solid fa-phone"></i> (212) XXX - XXXX </li>
+        <li> <i class="fa-solid fa-envelope"></i> cafecodebrew@gmail.com </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- Script Link-->
+<script src="products.js"></script>
+
+
+</html>

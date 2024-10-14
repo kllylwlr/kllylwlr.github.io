@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+  <!--
+  <link href="signup.css" rel="stylesheet" type="text/css" /> -->
+  <!-- testing w/ existing style sheet -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Font Awesome Icons library Link: https://cdnjs.com/libraries/font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+    function checker(event) {
+      event.preventDefault();
+
+      $("#resultDiv").load("signup.php", $("#targetForm").serializeArray(), function() {
+        $("#targetForm").submit();
+      });
+    }
+
+    $(document).ready(function() {
+      $("#targetForm").submit(checker);
+    });
+  </script>
+
+</head>
+<body>
+  <nav>
+
+    <ul>
+
+      <div class="navRight">
+        <img class="navLogo" src="images/codebrew-logo.png">
+        <li> <a href="index.html">HOME</a> </li>
+        <li> <a href="products.html"> MENU</a></li>
+        <li> <a href="search.html"> BROWSE ITEMS </a> </li>
+        <li> <a href="login.html"> LOG IN </a> </li>
+        <li> <a class="activeLink" href="signup.html"> SIGN UP </a> </li>
+        <li> <a href="contact.html"> CONTACT US </a> </li>
+      </div>
+    </ul>
+  </nav>
+
+  <h1>SIGN UP</h1>
+  <div id=formContainer>
+    <form id="targetForm" action="signup.php" method="post" onsubmit="return checker();">
+      <!-- Full Name Field -->
+
+      <label for="email"> Email Address: </label>
+      <input name="email" id="email" type="text" required>
+
+      <!-- Password Field -->
+      <label for="password">Password: </label>
+      <input name="password" id="password" type="text" required>
+
+      <!-- Submit Button -->
+      <input type="submit" value="SIGN UP" id="submit">
+    </form>
+    <br>
+    <div id="resultDiv"></div>
+
+    <p id="question">Already a memeber?
+      <a href="login.html">Log in</a>
+    </p>
+  </div>
+
+  <!-- FOOTER -------------------------------------------------------------->
+  <footer>
+    <div class="flexContainer">
+      <!-- Cafe Blurb Section -->
+      <div class="flexCol40">
+        <img class="logo" src="images/codebrew-logo.png">
+        <p> Developing the best coffee since 2023.</p>
+        <p>Copyright 2023 - Cafe CodeBrew</p>
+      </div>
+
+      <!-- Pages Section -->
+      <div class="flexCol25">
+        <p class="footerSecHead"> PAGES </p>
+        <ul>
+          <li> <a href="index.html"> Home </a> </li>
+          <li> <a href="products.html"> Menu </a> </li>
+          <li> <a href="search.html"> Search </a> </li>
+          <li> <a href="contact.html"> Contact </a> </li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="flexCol25">
+        <p class="footerSecHead"> CONTACT </p>
+        <ul>
+          <li> <i class="fa-solid fa-location-dot"></i> 16 Courant, New York, NY 10003</li>
+          <li> <i class="fa-solid fa-phone"></i> (212) XXX - XXXX </li>
+          <li> <i class="fa-solid fa-envelope"></i> cafecodebrew@gmail.com </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
