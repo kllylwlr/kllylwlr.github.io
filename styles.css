@@ -39,12 +39,6 @@ body {
 
 /* HEADER / NAVIGATION -----------------------------------------------------------------------------*/
 
-.header-col {
-	width: 50%;
-	padding: 0 30px 0 30px; /* top, right, bottom, left */
-	/* background-color: pink; */
-}
-
 /* Maybe make position: sticky or fixed (https://www.w3schools.com/css/css_positioning.asp) */
 header {
 	margin-bottom: 20px; /* 100px; */
@@ -53,17 +47,31 @@ header {
 
 #logo {
 	margin-top: 6px;
+	width: 100%;
 }
 
-.topNav {
-	float: right;
-	margin-top: 36px;
-	/*margin-right: 36px; */
+/* Navigation Grid --------------------- */
+.nav_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	padding: 0 8%;
 }
+
+.nav_logo {
+	/* span */
+  	grid-column: 1 / span 1;
+	justify-content: left;
+}
+
+.nav_links {
+	grid-column: 2 / span 2;
+	justify-self: right;
+}
+
 
 /* Navigation bar links */
-.topNav a{
-	color: #BD55D7;
+.nav_links a {
 	font-size: 18px;
 	text-decoration: none;
 	padding: 5px 24px 5px 25px;
@@ -72,19 +80,19 @@ header {
 }
 
 /* Hover style */
-.topNav a.activeNav {
+.nav_links a.activeNav {
 	/* Border */
-	background-color: #BD55D7;
+	background-color: #AB2FCA;
 	border-radius: 20px;
 	border: none;
 	/* Text */
-	color: #FEF9F1;
+	color: white;
 	font-weight: bold;
 }
 
 /* Active style */
 /* Resource: active link not hover: https://stackoverflow.com/questions/37802124/how-to-disable-hover-effect-for-active-link */
-.topNav a:hover:not(.activeNav) {
+.nav_links a:hover:not(.activeNav) {
 	/* Border */
 	background-color: #F5DFF9;
 	border-radius: 20px;
@@ -93,43 +101,26 @@ header {
 
 /* ALT COLOR HEADER (For Individual Projects) */
 .headerAlt {
-	background-color: #BD55D7;
+	background-color: #AB2FCA;
 	margin-bottom: 0px;
 }
 
-.navAlt a {
+#navAlt a {
 	color: white;
 }
 
-.navAlt a.activeNavAlt {
+#navAlt a.activeNavAlt {
 	background-color: #FEF9F1;
-	color: #BD55D7;
+	color: #AB2FCA;
 }
 
-.navAlt a:hover:not(.activeNavAlt){
+#navAlt a:hover:not(.activeNavAlt){
 	background-color: #D8AAE4;
 	color: white;
 }
 
 
-/* Responsive */
-/* Tablet view */
-@media(max-width: 767px){
-	.header-col {
-		width: 75%;
-	}
-	.topNav {
-		float: left;
-	}
-}
 
-/* Mobile View */
-@media(max-width: 574px){
-	.header-col {
-		width: 100%;
-	}
-
-}
 
 /* -------------------------------------------------------------------------------------
 	FOOTER
@@ -137,7 +128,7 @@ header {
 /* Responsive Footer Reference: https://www.youtube.com/watch?v=YOb67OKw62s&t=279s */
 
 footer {
-	background-color: #C57AD8;
+	background-color: #AB2FCA;
 	/*height: 200px; */
 	margin-top: 156px;
 	padding: 70px 0; /* from responsive footer video */
@@ -151,8 +142,6 @@ footer {
 
 /* Copyright text */
 #copyright{
-	font-size: 20px;
-	color: white;
 	margin: 0px 0px 0px 0px;
 	margin-bottom: 10px;
 }
@@ -163,8 +152,6 @@ footer {
 }
 
 .sitemap a {
-	font-size: 18px;
-	color: white;
 	margin: 10px 8px 10px 10px;
 	font-weight: 500;
 	text-decoration: none;
@@ -183,7 +170,6 @@ footer {
 /* Social media links div */
 .socialLinks a {
 	font-size: 18px;
-	color: white;
 	font-weight: 500;
 	text-decoration: none;
 	padding-top: 5px;
@@ -201,26 +187,7 @@ footer {
 	color: #F5DFF9;
 }
 
-/* Responsive --------- */
 
-/* Tablet view */
-@media(max-width: 767px){
-	.footer-col {
-		width: 50%;
-	}
-}
-
-/* Mobile View */
-@media(max-width: 574px){
-	.footer-col {
-		width: 100%;
-	}
-
-	.sitemap {
-		margin-top: 30px;
-		float: left;
-	}
-}
 
 /* Headings ----------------------------------------------------------------------------------*/
 
@@ -229,17 +196,13 @@ footer {
 }
 
 h1 {
-	color: #BD55D7;
 	font-size: 96px;
 	font-style: normal;
 	font-weight: 700;
 	text-align: center;
 }
 
-.h1White { color: white;}
-
 h2 {
-	color: #BD55D7;
 	font-size: 50px;
 	font-style: normal;
 	font-weight: 700;
@@ -249,31 +212,39 @@ h2 {
 	*/
 }
 
-.h2White { color: white;}
-
 .h2-center { text-align: center;}
 
 .h2-left { text-align: left; }
 
 h3 {
-	color: #BD55D7;
 	font-size: 36px;
 	font-style: normal;
 	font-weight: 700;
 }
 
-.h3White { color: white;}
-
 h4 {
-	color: #BD55D7;
 	font-size: 24px;
 	font-weight: 700;
 }
 
 /* Body Text ------------------------------------------------------------------------------*/
 
-p {
+/* Purple Text Colors ------------ */
+h1, h2, h3, h4 {
 	color: #BD55D7;
+}
+
+/* paragraph text - darker purple */
+p, ul, label {
+	color: #8e44ad;
+}
+
+/* White text colors ---- */
+#copyright, .sitemap a, .socialLinks a, .h1White, .h2White, .h3White, .pWhite, .listWhite {
+	color: white;
+}
+
+p {
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
@@ -281,22 +252,19 @@ p {
 }
 
 .homepageDesc {
-	margin: 20px 120px 20px 120px;
+	justify-self: center;
+	text-align: center;
 }
-
-.pWhite { color: white;}
 
 /* List Items */
 ul {
-	color: #BD55D7;
 	font-size: 20px;
 	margin-left: 20px;
 }
 
-.listWhite { color: white; }
 
 
-
+/* is this repetitious with proj title later? */
 .projectTitle {
 	font-size: 40px;
 	color: #46214F;
@@ -305,6 +273,11 @@ ul {
 }
 
 /* Buttons -----------------------------------------------------------------------------*/
+
+/* Button Colors - Purple */
+.button, .activeNav, .nav_links a {
+	color: #9932cc;
+}
 
 .button {
 	/* Button */
@@ -358,24 +331,30 @@ ul {
 	/* background-color: green; */
 	width: 45%;
 	border-radius: 14px;
-	padding-left: 46px;
+	/*
+	padding-left: 46px;*/
+	padding: 10%;
+	justify-items: center;
 }
 
-/* Project Title */
-.proj-title {
+/* Project Title & Desc -------------- */
+.proj-title, .proj-desc {
 	color: #46214F;
+}
+
+/* Project title*/
+.proj-title {
 	font-size: 40px;
 	font-weight: 700;
-	margin-top: 167px; /* 31% */
+	/* margin-top: 167px; */
 }
 
 /* Project Description */
 .proj-desc {
 	font-size: 18px;
-	color: #46214F;
 	font-weight: 400;
-	/* Position */
-	margin-top: 12px;
+	/* Position 
+	margin-top: 12px; */
 }
 
 /* Project Image col */
@@ -404,17 +383,19 @@ ul {
 	border-radius: 41px;
 	border-style: none;
 	padding: 14px 40px 14px 40px; /* top, right, bottom, left */
+	/*
 	position: absolute;
 	bottom: 100px;
+	*/
 }
 
 /* Case Study Button Variants */
-.btn-manilla { background-color: #D2A2CC;}
-.btn-stud-e { background-color: #8CA1E6;}
-.btn-playpart { background-color: #B7C55E;}
-.btn-bakexpress { background-color: #F1C554;}
-.btn-linefinder { background-color: #64A5D0;}
-.btn-cafecodebrew { background-color: #E8A049;}
+.btn-manilla { background-color: #913D88;}
+.btn-stud-e { background-color: #3A539B;}
+.btn-playpart { background-color: #008000;}
+.btn-bakexpress { background-color: #B35C00;}
+.btn-linefinder { background-color: #1563B2;}
+.btn-cafecodebrew { background-color: #AA5535;}
 
 /* Case Study Background Variants */
 .proj-manilla { background-color: #E7D0E3; }
@@ -431,7 +412,7 @@ ul {
 /* Project Header Container */
 /* How to specify each corner: https://www.w3schools.com/css/css3_borders.asp */
 .proj-header {
-	background-color: #BD55D7;
+	background-color: #AB2FCA;
 	padding: 0px 90px 90px 90px; /* top, right, bottom, left */
 	border-radius: 0px 0px 85px 85px; /* top-left, top-right, bottom-right, bottom-left */
 }
@@ -489,6 +470,66 @@ figcaption  {
 /* -----------------------------------------------------------------------------------------
 		ABOUT PAGE
 ------------------------------------------------------------------------------------------*/
+
+/* About Page grid 
+.about_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	padding: 0 8%;
+}
+
+.abt_intro {
+	grid-row: 1;
+	grid-column: 1 / span 2;
+
+}
+
+.abt_portrait {
+	grid-row: 1;
+	grid-column: 3 / span 1;
+
+}
+
+.abt_experience {
+	grid-row: 2;
+	grid-column: 1 / span 2;
+
+}
+
+.abt_skills {
+	grid-row: 2;
+	grid-column: 3 / span 2;
+
+}
+
+Job Experience grids
+.exp_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.exp_job_title {
+	grid-row: 1;
+	grid-column: 1 / span 1;
+	height: auto;
+}
+
+.exp_job_dates {
+	grid-row: 1;
+	grid-column: 2 / span 1;
+	height: auto;
+
+}
+
+.exp_job_desc {
+	grid-row: 2;
+	grid-column: 1 / span 2;
+	padding: 1px;
+}
+*/
+
 
 /* About column */
 .about-col {
@@ -634,11 +675,128 @@ input[type=submit] {
 label {
 	font-size: 18px;
 	font-weight: 500;
-	color: #BD55D7;
 }
 
 /* Label Alignment */
 label, input {
 	display: flex;
 	flex-direction: column;
+}
+
+
+/* Responsive Views */
+
+/* Tablet view */
+@media(max-width: 810px){
+	.footer-col {
+		width: 50%;
+	}
+
+	/* Headings */
+	h1, #name-heading {
+		font-size: 34px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	p, ul, .footer a {
+		font-size: 16px;
+	}
+
+	/* Project previews */
+	.projPreview {
+		width: 80%;
+		height: 100%;
+	}
+
+	.proj-title {
+		font-size: 26px;
+	}
+
+	.proj-desc {
+		font-size: 14px;
+	}
+
+	.caseStudyBtn {
+		width: 90%;
+		font-size: 14px;
+		padding: 6%;
+		justify-self: flex-end;
+		align-self: flex-end;
+	}
+
+	/* Buttons */
+	.button {
+		font-size: 15px;
+	}
+
+}
+
+/* Mobile View */
+@media(max-width: 574px){
+	.footer-col {
+		width: 100%;
+	}
+
+	.sitemap {
+		margin-top: 30px;
+		float: left;
+	}
+
+	/* Headings */
+	h1, #name-heading {
+		font-size: 32px;
+	}
+	
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	p, ul {
+		font-size: 14px;
+	}
+
+	/* Navigation bar */
+
+	.nav_grid a {
+		font-size: 12px;
+		padding: 5%;
+	}
+
+	/* Project Divs */
+	.projPreview {
+		width: 80%;
+		height: 100%;
+	}
+
+	.proj-title { 
+		font-size: 18px;
+	}
+
+	.proj-desc {
+		font-size: 8px;
+	}
+
+	/* Button */
+	.button {
+		width: 60%;
+		font-size: 14px;
+		text-align: center;
+		padding: 5%;
+	}
+
+	/* Case study buttons */
+	.caseStudyBtn {
+		width: 90%;
+		font-size: 8px;
+		padding: 10%;
+		justify-items: end;
+	}
+
 }

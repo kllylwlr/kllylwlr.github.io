@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<!-- Head --------------------------------------------------------------------------------->
 	<head>
 		<meta charset="utf-8">
@@ -17,86 +17,86 @@
 	<body>
 		<!-- Header section ----------------------------------------------------------------------->
 		<header>
-			<div class="container">
-				<div class="row">
-					<div class="header-col">
-						<!-- Logo -->
-						<a href="index.html"><img src="images/Logo.svg" alt="website logo" width="254" height="96" id="logo">
-					</div>
-
-					<div class="header-col">
-						<!-- Navigation Resource: https://www.w3schools.com/howto/howto_js_topnav.asp -->
-						<div class="topNav">
-							<a href="index.html">Home</a>
-							<a href="work.html">Work</a>
-							<a href="about.html">About</a>
-							<a class="activeNav" href="contact.html">Contact</a>
-						</div>
-					</div>
-
-				</div> <!-- Row div end -->
-			</div> <!-- Container div end -->
+			<div class="nav_grid">
+				<div class="nav_logo">
+					<!-- Logo -->
+					<a href="index.html"><img src="images/Logo.svg" alt="website logo" width="254" height="96" id="logo"></a>
+				</div>
+				<div class="nav_links">
+					<!-- Navigation -->
+					<!-- Resource: https://www.w3schools.com/howto/howto_js_topnav.asp -->
+					<a href="index.html">Home</a>
+					<a href="work.html">Work</a>
+					<a href="about.html">About</a>
+					<a class="activeNav" href="contact.html">Contact</a>
+				</div>
+			</div>
 		</header>
 
-		<!-- Contact Form ----------------------------------------------------------------------->
-		<!-- Resource: https://www.w3schools.com/tags/tag_input.asp-->
-		<h1> Contact </h1>
-		<div class="contact-form">
+		<!-- Main section ----------------------------------------------------------------------->
+		<main>
 
-			<form onsubmit="sendEmail(); reset(); return false;"> <!-- action="/action_page.php" -->
-				<!-- Name Input Field -->
-				<!-- Resource: https://stackoverflow.com/questions/6046110/styling-form-with-label-above-inputs-->
-				<label for="name">Name: </label>
-				<input type="text" id="name" name="name" placeholder="First name Last name" required>
+			<!-- Contact Form ----------------------------------------------------------------------->
+			<!-- Resource: https://www.w3schools.com/tags/tag_input.asp-->
+			<h1> Contact </h1>
+			<div class="contact-form">
 
-				<!-- Email Input Field -->
-				<label for="email">Email: </label>
-				<input type="text" id="email" name="email" placeholder="e.g. example@gmail.com" required>
+				<form onsubmit="sendEmail(); reset(); return false;"> <!-- action="/action_page.php" -->
+					<!-- Name Input Field -->
+					<!-- Resource: https://stackoverflow.com/questions/6046110/styling-form-with-label-above-inputs-->
+					<label for="name">Name: </label>
+					<input type="text" id="name" name="name" placeholder="First name Last name" required>
 
-				<!-- Message Input Field -->
-				<label for="message">Message: </label>
-				<!-- <textarea type="textarea" id ="message" name="message" placeholder= "Test" style="height: 400px" required></textarea> -->
-				<textarea type="textarea" id ="message" name="message" rows="12" placeholder= "Test" required></textarea>
+					<!-- Email Input Field -->
+					<label for="email">Email: </label>
+					<input type="text" id="email" name="email" placeholder="e.g. example@gmail.com" required>
 
-				<!-- Send message button -->
-				<input type="submit" value="Submit">
-			</form>
-		</div>
+					<!-- Message Input Field -->
+					<label for="message">Message: </label>
+					<!-- <textarea type="textarea" id ="message" name="message" placeholder= "Test" style="height: 400px" required></textarea> -->
+					<textarea type="textarea" id ="message" name="message" rows="12" placeholder= "Test" required></textarea>
 
-		<!-- Form javascript functionality -->
-		<script src="https://smtpjs.com/v3/smtp.js"></script>
-		<script>
-			function sendEmail(){
-				Email.send({
-				    Host : "smtp.gmail.com",
-				    Username : "klawlor2580@gmail.com",
-				    Password : "Th@tcheet@h3624*",
-				    To : 'klawlor2580@gmail.com',
-				    From : document.getElementById("email").value,
-				    Subject : "New Contact Form Message",
-				    Body : "Name: " + document.getElementById("name").value
-									+ "<br> Email: " + document.getElementById("email").value
-									+ "<br> Message: " + document.getElementById("message").value
-				}).then(
-				  message => alert("Message Sent Successfully!")
-				);
-			}
+					<!-- Send message button -->
+					<input type="submit" value="Submit">
+				</form>
+			</div>
 
-		</script>
+			<!-- Form javascript functionality -->
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
+			<script>
+				function sendEmail(){
+					Email.send({
+						Host : "smtp.gmail.com",
+						Username : "klawlor2580@gmail.com",
+						Password : "Th@tcheet@h3624*",
+						To : 'klawlor2580@gmail.com',
+						From : document.getElementById("email").value,
+						Subject : "New Contact Form Message",
+						Body : "Name: " + document.getElementById("name").value
+										+ "<br> Email: " + document.getElementById("email").value
+										+ "<br> Message: " + document.getElementById("message").value
+					}).then(
+					message => alert("Message Sent Successfully!")
+					);
+				}
 
-		<!-- Elsewhere you can find me -------------------------------------------------------->
-		<h2 class=h2-center> Elsewhere you can find me! </h2>
+			</script>
 
-		<!-- Social Media Links -->
-		<div class="social-section">
+			<!-- Elsewhere you can find me -------------------------------------------------------->
+			<h2 class=h2-center> Elsewhere you can find me! </h2>
 
-				<!-- LinkedIn -->
-				<a href="https://www.linkedin.com/in/kelly-lawlor/" class="social-large" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+			<!-- Social Media Links -->
+			<div class="social-section">
 
-				<!-- Github -->
-				<a href="https://github.com/kllylwlr" class="social-large" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a>
+					<!-- LinkedIn -->
+					<a href="https://www.linkedin.com/in/kelly-lawlor/" class="social-large" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
 
-		</div>
+					<!-- Github -->
+					<a href="https://github.com/kllylwlr" class="social-large" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a>
+
+			</div>
+
+		</main>
 
 
 	<!-- Footer ----------------------------------------------------------------------------->
@@ -105,7 +105,7 @@
 			<div class="row">
 
 				<div class="footer-col">
-					<p id="copyright"> Kelly Lawlor © 2023 </p>
+					<p id="copyright"> Kelly Lawlor © 2025 </p>
 					<div class="socialLinks">
 						<a href="https://www.linkedin.com/in/kelly-lawlor/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
 						<a href="https://github.com/kllylwlr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a>

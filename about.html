@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,44 +16,291 @@
 	<body>
 		<!-- Header section ----------------------------------------------------------------------->
 		<header>
-			<div class="container">
-				<div class="row">
-					<div class="header-col">
-						<!-- Logo -->
-						<a href="index.html"><img src="images/Logo.svg" alt="website logo" width="254" height="96" id="logo">
-					</div>
-
-					<div class="header-col">
-						<!-- Navigation -->
-						<!-- Resource: https://www.w3schools.com/howto/howto_js_topnav.asp -->
-						<div class="topNav">
-							<a href="index.html">Home</a>
-							<a href="work.html">Work</a>
-							<a class="activeNav" href="about.html">About</a>
-							<a href="contact.html">Contact</a>
-						</div>
-					</div>
-
-				</div> <!-- Row div end -->
-			</div> <!-- Container div end -->
+			<div class="nav_grid">
+				<div class="nav_logo">
+					<!-- Logo -->
+					<a href="index.html"><img src="images/Logo.svg" alt="website logo" width="254" height="96" id="logo"></a>
+				</div>
+				<div class="nav_links">
+					<!-- Navigation -->
+					<!-- Resource: https://www.w3schools.com/howto/howto_js_topnav.asp -->
+					<a href="index.html">Home</a>
+					<a href="work.html">Work</a>
+					<a class="activeNav" href="about.html">About</a>
+					<a href="contact.html">Contact</a>
+				</div>
+			</div>
 		</header>
 
-		<!-- H1 Heading ------------------------------------------------------------------------>
-		<h1> About </h1>
+		<!-- MAIN section ------------------------------------------------------------------------->
+		<main>
+			<h1> About </h1>
 
-		<!-- About me + Portrait ------------------------------------------------------------------------------------------------->
+			<!-- About me + Portrait ------------------------------------------------------------------------------------------------->
+			<div class="container">
 
-		<div class="container">
+				<div class="row">
 
-			<div class="row">
+					<div class="about-col">
 
-				<div class="about-col">
+						<h2 class="h2-left"> Hello! </h2>
+						<p> My name is Kelly Lawlor and I am a Senior studying English and
+							Computer Science at New York University. </p>
+						<br>
 
+						<p> I have loved to exercise my creativity from a young age, and I was
+							drawn by UX because unlike other design fields where you aim to
+							create the most aesthetically pleasing product, in UX you must also
+							work to create an enjoyable and painless experience, and the
+							challenge of striking that perfect balance between form and function
+							along with having the opportunity to improve people’s day are
+							something I find very rewarding. </p>
+						<br>
+
+						<p>Outside of work I enjoy engaging in a lot of other creative hobbies
+							such as sewing, drawing, and writing!</p>
+
+					</div> <!-- abt col end -->
+
+					<div class="portrait-col">
+
+						<img src="images/kelly-lawlor-centene-id.png" alt="Smiling girl with long brown hair" id="portrait">
+
+					</div> <!-- portrait col end -->
+
+				</div> <!-- Row end -->
+
+			</div> <!-- Container end -->
+
+			<!-- Experience section ----------------------------------------------------------------------------------------------->
+			<div class="container">
+				<div class="row">
+
+					<!-- Experience Column ------------------------------------------------>
+					<div class="experience-col">
+						<h2 class="h2-left"><i class="fa-solid fa-briefcase"></i> Experience </h2>
+
+							<!-- Experience 1: Centene --------------------------->
+							<div class="container">
+								<!-- Job heading row -->
+								<div class="row">
+
+										<!-- Job title column -->
+										<div class="job-col">
+											<p> Centene - User Experience Design Intern </p>
+										</div>
+
+										<!-- Job date column -->
+										<div class="date-col">
+											<p> 05/2023 - 08/2023 </p>
+										</div>
+
+								</div> <!-- end of job title & date row -->
+
+								<!-- Job description row -->
+								<div class="row">
+									<!-- Job description column -->
+									<div class="job-desc-col">
+										<ul>
+
+											<li>Collaborated on a team with developers and business
+												managers on the redesign of a tool used by medical providers
+												to modernize its interface and resolve user pain points
+											</li>
+
+											<li>Designed an interactable prototype and composed use case
+												scenario questions to conduct usability testing with users
+											</li>
+
+											<li>Partnered with product management and business analysts
+												to identify business needs, prioritize MVP requirements,
+												and bridge the gap between user needs and business goals
+											</li>
+
+											<li>Worked closely with developers to ensure feasibility of
+												features and provide design support during front end
+												development
+											</li>
+
+											<li>Collaborated with Accessibility team to ensure compliance
+												with WCAG, practice inclusive design, and build an
+												accessible product
+											</li>
+
+										</ul>
+									</div> <!-- end of job desc col -->
+								</div> <!-- end of job desc row -->
+							</div> <!-- end of experience 1 -------------------------->
+
+							<!-- Experience 2: LBX --------------------------->
+							<div class="container">
+								<!-- Job heading row -->
+								<div class="row">
+
+										<!-- Job title column -->
+										<div class="job-col">
+											<p> LBX - User Research and Development Consultant </p>
+										</div>
+
+										<!-- Job date column -->
+										<div class="date-col">
+											<p> 02/2023 - 05/2023 </p>
+										</div>
+
+								</div> <!-- end of job title & date row -->
+
+								<!-- Job description row -->
+								<div class="row">
+									<!-- Job description column -->
+									<div class="job-desc-col">
+										<ul>
+
+											<li>Served as UX Design and Research consultant for go to
+												market strategy
+											</li>
+
+											<li>Advocated for users to help team see beyond business
+												goals, and produced solutions that combined user and
+												stakeholder needs
+											</li>
+
+											<li>Streamlined product’s user journey by mapping user flows
+												and identifying pain points and areas for optimization
+											</li>
+
+											<li>Designed and presented informative slideshows summarizing
+												design insights, solution mockups and next steps to track
+												milestones and progress
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</div> <!-- end of experience 2 -------------------------->
+
+						<!-- Experience 3: Playpart --------------------------->
+						<div class="container">
+							<!-- Job heading row -->
+							<div class="row">
+
+									<!-- Job title column -->
+									<div class="job-col">
+										<p> Playpart - User Design and Research Intern </p>
+									</div>
+
+									<!-- Job date column -->
+									<div class="date-col">
+										<p> 06/2022 - 08/2022 </p>
+									</div>
+
+							</div> <!-- end of job title & date row -->
+
+							<!-- Job description row -->
+							<div class="row">
+								<div class="job-desc-col">
+									<ul>
+
+										<li>Applied user-centered design thinking to recommend new
+											features and improve existing features of company’s mobile app
+										</li>
+
+										<li>Interviewed and surveyed clients to gather user feedback
+											to support rationalization for proposed design changes
+										</li>
+
+										<li>Conducted competitive analysis to identify gaps in the
+											market by learning from design strengths and weaknesses of
+											other social media apps
+										</li>
+
+										<li>Worked closely with developers on realization of new
+											proposed features from conceptualization to implementation
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div> <!-- end of experience 3 -------------------------->
+
+					</div> <!-- experience col end ---------------------------------------->
+
+					<!-- Skill Column ----------------------------------------------------->
+					<div class="skill-col">
+
+						<!-- SKILLS SECTION -->
+						<h2 class="h2-left"><i class="fa-solid fa-lightbulb"></i> Skills </h2>
+							<ul>
+								<li>User Experience Design </li>
+								<li>User Experience Research </li>
+								<li>Web Design</li>
+								<li>Usability Testing</li>
+								<li>Competitive Analysis</li>
+								<li>Prototyping</li>
+								<li>Coding
+									<ul>
+										<li>HTML</li>
+										<li>CSS</li>
+										<li>Javascript</li>
+										<li>Python</li>
+										<li>Java</li>
+									</ul>
+								</li>
+							</ul>
+
+						<!-- TOOLS SECTION -->
+						<h2 class="h2-left"><i class="fa-solid fa-hammer"></i> Tools</h2>
+							<ul>
+								<li>Figma</li>
+								<li>Adobe Creative Suite
+									<ul>
+										<li>Adobe Photoshop</li>
+										<li>Adobe Illustrator</li>
+										<li>Adobe XD</li>
+										<li>Adobe After Effects</li>
+									</ul>
+								</li>
+								<li>Microsoft Office Suite
+									<ul>
+										<li>Microsoft Excel</li>
+										<li>Microsoft Teams</li>
+										<li>Microsoft Word</li>
+										<li>Microsoft Powerpoint</li>
+									</ul>
+								</li>
+							</ul>
+
+					</div> <!-- skills col end -->
+				</div> <!-- Row div end -->
+			</div> <!-- Container div end -->
+
+			<!-- Download Resume Button -->
+			<a href="documents/Kelly-Lawlor-UX-Resume.pdf" class="button" download target="_blank" rel="noopener noreferrer"><i class="fa fa-download"></i> Download Resume</a>
+
+
+			<!-- Elsewhere you can find me -------------------------------------------------------->
+			<h2 class=h2-center> Elsewhere you can find me! </h2>
+
+			<!-- Social Media Links -->
+			<div class="social-section">
+
+					<!-- LinkedIn -->
+					<a href="https://www.linkedin.com/in/kelly-lawlor/" class="social-large" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+
+					<!-- Github -->
+					<a href="https://github.com/kllylwlr" class="social-large" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a>
+
+			</div>
+
+						<!--
+			<h1> About </h1>
+
+			<div class="about_grid">
+				
+				<div class="abt_intro">
 					<h2 class="h2-left"> Hello! </h2>
 					<p> My name is Kelly Lawlor and I am a Senior studying English and
 						Computer Science at New York University. </p>
 					<br>
-
 					<p> I have loved to exercise my creativity from a young age, and I was
 						drawn by UX because unlike other design fields where you aim to
 						create the most aesthetically pleasing product, in UX you must also
@@ -62,187 +309,69 @@
 						along with having the opportunity to improve people’s day are
 						something I find very rewarding. </p>
 					<br>
-
 					<p>Outside of work I enjoy engaging in a lot of other creative hobbies
 						such as sewing, drawing, and writing!</p>
+				</div>
 
-				</div> <!-- abt col end -->
-
-				<div class="portrait-col">
-
+				
+				<div class="abt_portrait">
 					<img src="images/kelly-lawlor-centene-id.png" alt="Smiling girl with long brown hair" id="portrait">
+				</div>
 
-				</div> <!-- portrait col end -->
-
-			</div> <!-- Row end -->
-
-		</div> <!-- Container end -->
-
-		<!-- Experience section ----------------------------------------------------------------------------------------------->
-		<div class="container">
-			<div class="row">
-
-				<!-- Experience Column ------------------------------------------------>
-				<div class="experience-col">
+				
+				<div class="abt_experience">
 					<h2><i class="fa-solid fa-briefcase"></i> Experience </h2>
 
-						<!-- Experience 1: Centene --------------------------->
-						<div class="container">
-							<!-- Job heading row -->
-							<div class="row">
-
-									<!-- Job title column -->
-									<div class="job-col">
-										<p> Centene - User Experience Design Intern </p>
-									</div>
-
-									<!-- Job date column -->
-									<div class="date-col">
-										<p> 05/2023 - 08/2023 </p>
-									</div>
-
-							</div> <!-- end of job title & date row -->
-
-							<!-- Job description row -->
-							<div class="row">
-								<!-- Job description column -->
-								<div class="job-desc-col">
-									<ul>
-
-										<li>Collaborated on a team with developers and business
-											managers on the redesign of a tool used by medical providers
-											to modernize its interface and resolve user pain points
-										</li>
-
-										<li>Designed an interactable prototype and composed use case
-											scenario questions to conduct usability testing with users
-										</li>
-
-										<li>Partnered with product management and business analysts
-											to identify business needs, prioritize MVP requirements,
-											and bridge the gap between user needs and business goals
-										</li>
-
-										<li>Worked closely with developers to ensure feasibility of
-											features and provide design support during front end
-											development
-										</li>
-
-										<li>Collaborated with Accessibility team to ensure compliance
-											with WCAG, practice inclusive design, and build an
-											accessible product
-										</li>
-
-									</ul>
-								</div> <!-- end of job desc col -->
-							</div> <!-- end of job desc row -->
-						</div> <!-- end of experience 1 -------------------------->
-
-						<!-- Experience 2: LBX --------------------------->
-						<div class="container">
-							<!-- Job heading row -->
-							<div class="row">
-
-									<!-- Job title column -->
-									<div class="job-col">
-										<p> LBX - User Research and Development Consultant </p>
-									</div>
-
-									<!-- Job date column -->
-									<div class="date-col">
-										<p> 02/2023 - 05/2023 </p>
-									</div>
-
-							</div> <!-- end of job title & date row -->
-
-							<!-- Job description row -->
-							<div class="row">
-								<!-- Job description column -->
-								<div class="job-desc-col">
-									<ul>
-
-										<li>Served as UX Design and Research consultant for go to
-											market strategy
-										</li>
-
-										<li>Advocated for users to help team see beyond business
-											goals, and produced solutions that combined user and
-											stakeholder needs
-										</li>
-
-										<li>Streamlined product’s user journey by mapping user flows
-											and identifying pain points and areas for optimization
-										</li>
-
-										<li>Designed and presented informative slideshows summarizing
-											design insights, solution mockups and next steps to track
-											milestones and progress
-										</li>
-
-									</ul>
-								</div>
-							</div>
-						</div> <!-- end of experience 2 -------------------------->
-
-					<!-- Experience 3: Playpart --------------------------->
-					<div class="container">
-						<!-- Job heading row -->
-						<div class="row">
-
-								<!-- Job title column -->
-								<div class="job-col">
-									<p> Playpart - User Design and Research Intern </p>
-								</div>
-
-								<!-- Job date column -->
-								<div class="date-col">
-									<p> 06/2022 - 08/2022 </p>
-								</div>
-
-						</div> <!-- end of job title & date row -->
-
-						<!-- Job description row -->
-						<div class="row">
-							<div class="job-desc-col">
-								<ul>
-
-									<li>Applied user-centered design thinking to recommend new
-										features and improve existing features of company’s mobile app
-									</li>
-
-									<li>Interviewed and surveyed clients to gather user feedback
-										to support rationalization for proposed design changes
-									</li>
-
-									<li>Conducted competitive analysis to identify gaps in the
-										market by learning from design strengths and weaknesses of
-										other social media apps
-									</li>
-
-									<li>Worked closely with developers on realization of new
-										proposed features from conceptualization to implementation
-									</li>
-
-								</ul>
-							</div>
+					
+					<div class="exp_grid">
+						
+						<div class="exp_job_title">
+							<p> Centene - User Experience Design Intern </p>
 						</div>
-					</div> <!-- end of experience 3 -------------------------->
+						
+						<div class="exp_job_dates">
+							<p> 05/2023 - 08/2023 </p>
+						</div>
 
-				</div> <!-- experience col end ---------------------------------------->
+						
+						<div class="exp_job_desc">
+							<ul>
+								<li>Collaborated on a team with developers and business
+									managers on the redesign of a tool used by medical providers
+									to modernize its interface and resolve user pain points
+								</li>
+								<li>Designed an interactable prototype and composed use case
+									scenario questions to conduct usability testing with users
+								</li>
+								<li>Partnered with product management and business analysts
+									to identify business needs, prioritize MVP requirements,
+									and bridge the gap between user needs and business goals
+								</li>
+								<li>Worked closely with developers to ensure feasibility of
+									features and provide design support during front end
+									development
+								</li>
+								<li>Collaborated with Accessibility team to ensure compliance
+									with WCAG, practice inclusive design, and build an
+									accessible product
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div> 
 
-				<!-- Skill Column ----------------------------------------------------->
-				<div class="skill-col">
-
-					<!-- SKILLS SECTION -->
+				
+				<div class="abt_skills">
+					
 					<h2><i class="fa-solid fa-lightbulb"></i> Skills </h2>
-						<ul>
-							<li>User Experience Design </li>
-							<li>User Experience Research </li>
-							<li>Web Design</li>
-							<li>Usability Testing</li>
-							<li>Competitive Analysis</li>
-							<li>Prototyping</li>
-							<li>Coding</li>
+					<ul>
+						<li>User Experience Design </li>
+						<li>User Experience Research </li>
+						<li>Web Design</li>
+						<li>Usability Testing</li>
+						<li>Competitive Analysis</li>
+						<li>Prototyping</li>
+						<li>Coding
 							<ul>
 								<li>HTML</li>
 								<li>CSS</li>
@@ -250,49 +379,37 @@
 								<li>Python</li>
 								<li>Java</li>
 							</ul>
-						</ul>
+						</li>
+					</ul>
 
-					<!-- TOOLS SECTION -->
+					
 					<h2><i class="fa-solid fa-hammer"></i> Tools</h2>
-						<ul>
-							<li>Figma</li>
-							<li>Adobe Creative Suite</li>
+					<ul>
+						<li>Figma</li>
+						<li>Adobe Creative Suite
 							<ul>
 								<li>Adobe Photoshop</li>
 								<li>Adobe Illustrator</li>
 								<li>Adobe XD</li>
 								<li>Adobe After Effects</li>
 							</ul>
-							<li>Microsoft Office Suite</li>
+						</li>
+						<li>Microsoft Office Suite
 							<ul>
 								<li>Microsoft Excel</li>
 								<li>Microsoft Teams</li>
 								<li>Microsoft Word</li>
 								<li>Microsoft Powerpoint</li>
 							</ul>
-						</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-				</div> <!-- skills col end -->
-			</div> <!-- Row div end -->
-		</div> <!-- Container div end -->
+			-->
 
-		<!-- Download Resume Button -->
-		<a href="documents/Kelly-Lawlor-UX-Resume.pdf" class="button" download target="_blank" rel="noopener noreferrer"><i class="fa fa-download"></i> Download Resume</a>
-
-
-		<!-- Elsewhere you can find me -------------------------------------------------------->
-		<h2 class=h2-center> Elsewhere you can find me! </h2>
-
-		<!-- Social Media Links -->
-		<div class="social-section">
-
-				<!-- LinkedIn -->
-				<a href="https://www.linkedin.com/in/kelly-lawlor/" class="social-large" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-
-				<!-- Github -->
-				<a href="https://github.com/kllylwlr" class="social-large" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a>
-
-		</div>
+		
+		</main>
 
 		<!-- Footer ----------------------------------------------------------------------------->
 		<footer>
@@ -300,7 +417,7 @@
 				<div class="row">
 
 					<div class="footer-col">
-						<p id="copyright"> Kelly Lawlor © 2023 </p>
+						<p id="copyright"> Kelly Lawlor © 2025 </p>
 						<div class="socialLinks">
 							<a href="https://www.linkedin.com/in/kelly-lawlor/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
 							<a href="https://github.com/kllylwlr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a>
